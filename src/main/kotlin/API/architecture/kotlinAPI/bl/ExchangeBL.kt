@@ -1,5 +1,7 @@
 package API.architecture.kotlinAPI.bl
 
+import API.architecture.kotlinAPI.dao.Currency
+import API.architecture.kotlinAPI.dao.repository.CurrencyRepository
 import API.architecture.kotlinAPI.errorHandling.CustomMessageError
 import API.architecture.kotlinAPI.models.Exchange
 import com.fasterxml.jackson.annotation.JsonInclude
@@ -9,13 +11,14 @@ import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.Response
 import org.slf4j.LoggerFactory
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 import java.io.IOException
 import java.math.BigDecimal
 import java.util.*
 
 @Service
-class ExchangeBL {
+class ExchangeBL @Autowired constructor(private val currencyRepository: CurrencyRepository){
     //Logger
     var logger = LoggerFactory.getLogger(this::class.java)
 
@@ -41,6 +44,14 @@ class ExchangeBL {
                 val obj: Exchange = objectMapper.readValue(jsonData, Exchange::class.java)
                 //Logger
                 logger.info("Custom Response: $obj")
+                //JPA
+                val currency = Currency()
+                currency.currencyFrom = from
+                currency.currencyTo = to
+                currency.amount = amount
+                currency.date = Date()
+                currency.result = obj.result
+                currencyRepository.save(currency)
                 return obj.toString()
             } catch (e: IOException) {
                 throw CustomMessageError(e.toString())
