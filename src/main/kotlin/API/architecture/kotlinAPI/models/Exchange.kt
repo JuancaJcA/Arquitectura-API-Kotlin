@@ -4,4 +4,4 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import java.math.BigDecimal
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-data class Exchange(var date: String, var result: BigDecimal, var success: Boolean, var query: Query)
+data class Exchange(val date: String, val result: BigDecimal, val success: Boolean, val query: Query)

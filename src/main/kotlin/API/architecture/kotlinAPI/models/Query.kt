@@ -4,4 +4,4 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import java.math.BigDecimal
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-data class Query(var amount: BigDecimal, var from: String, var to: String)
+data class Query(val amount: BigDecimal, val from: String, val to: String)
