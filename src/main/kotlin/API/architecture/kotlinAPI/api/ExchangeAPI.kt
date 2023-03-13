@@ -1,11 +1,14 @@
 package API.architecture.kotlinAPI.api
 
 import API.architecture.kotlinAPI.bl.ExchangeBL
+import API.architecture.kotlinAPI.dao.repository.CurrencyRepository
 import API.architecture.kotlinAPI.models.Exchange
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.data.domain.PageRequest
 import org.springframework.http.MediaType
+import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping
@@ -46,13 +49,11 @@ class ExchangeAPI {
         }
     }
 
-    @GetMapping(value = ["exchange"], produces = [MediaType.APPLICATION_JSON_VALUE])
-    fun getDefaultExchange(): String? {
-        //Logger
-        LOGGER.info("Default Exchange API working")
-        //Default values
-        return exchangeBL?.getDefaultExchange()
+    @GetMapping("/pagination")
+    fun getAllCurrency(
+        @RequestParam(defaultValue = "0") page: Int,
+        @RequestParam(defaultValue = "10") size: Int
+    ): ResponseEntity<Map<String, Any>>? {
+        return exchangeBL?.getAllCurrency(page, size)
     }
-
-
 }

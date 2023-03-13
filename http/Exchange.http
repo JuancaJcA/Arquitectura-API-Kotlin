@@ -1,4 +1,4 @@
-### Get default exchange value
-GET http://localhost:8008/api/v1/exchange
 ### Get custom exchange value
-GET http://localhost:8008/api/v1/exchange/EUR/GBP/5000
+GET http://localhost:8008/api/v1/exchange/EUR/GBP/5
+### Get pagination
+GET http://localhost:8008/api/v1/pagination?page=1&size=4

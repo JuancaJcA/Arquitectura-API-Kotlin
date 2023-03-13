@@ -8,13 +8,12 @@ api:
 spring:
   datasource:
     type: org.postgresql.jdbc2.optional.SimpleDataSource
-    username: postgres
-    password: mysecretpassword
-    url: jdbc:postgresql://localhost:5432/software
-
-#    username: ${USERNAME:postgres}
-#    password: ${PASSWORD:mysecretpassword}
-#    url: ${URL:jdbc:postgresql://localhost:5432/software}
+#    username: postgres
+#    password: mysecretpassword
+#    url: jdbc:postgresql://localhost:5432/software
+    username: ${USERNAME:postgres}
+    password: ${PASSWORD:mysecretpassword}
+    url: ${URL:jdbc:postgresql://localhost:5432/software}
 
   jpa:
     hibernate:

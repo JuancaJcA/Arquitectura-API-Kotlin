@@ -13,8 +13,11 @@ services:
     volumes:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
       - "${VOLUME_LINK}"
+    networks:
+      - my-network
+
   currency-converter:
-    image: demo:2.0.0
+    image: demo:4.0.0
     ports:
       - "8008:8008"
     restart: always
@@ -22,3 +25,23 @@ services:
       URL: "${POSTGRES_URL}"
     depends_on:
       - postgres
+    networks:
+      - my-network
+
+  angular:
+#    image: angular-software:3.0.0
+    image: angular-software-4.0.0-docker
+    restart: always
+    ports:
+      - "4200:80"
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.3.0.0/16
+          gateway: 172.3.0.1
