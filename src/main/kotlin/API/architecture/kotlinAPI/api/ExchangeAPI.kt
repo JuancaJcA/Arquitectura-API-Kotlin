@@ -1,6 +1,7 @@
 package API.architecture.kotlinAPI.api
 
 import API.architecture.kotlinAPI.bl.ExchangeBL
+import API.architecture.kotlinAPI.bl.VisitorBL
 import API.architecture.kotlinAPI.dao.repository.CurrencyRepository
 import API.architecture.kotlinAPI.models.Exchange
 import org.slf4j.Logger
@@ -23,10 +24,12 @@ import java.util.*
 class ExchangeAPI {
     //Business Logic
     private var exchangeBL: ExchangeBL? = null
+    private var visitorBL: VisitorBL? = null
 
     @Autowired
-    fun ExchangeAPI(exchangeBL: ExchangeBL?) {
+    fun ExchangeAPI(exchangeBL: ExchangeBL?, visitorBL: VisitorBL?) {
         this.exchangeBL = exchangeBL
+        this.visitorBL = visitorBL
     }
 
     //Logger
@@ -55,5 +58,20 @@ class ExchangeAPI {
         @RequestParam(defaultValue = "10") size: Int
     ): ResponseEntity<Map<String, Any>>? {
         return exchangeBL?.getAllCurrency(page, size)
+    }
+
+    @GetMapping(value = ["visitor/{to}/{from}/{amount}"], produces = [MediaType.APPLICATION_JSON_VALUE])
+    fun getVisitor(
+        @PathVariable to: Optional<String?>, @PathVariable from: Optional<String?>,
+        @PathVariable amount: Optional<BigDecimal?>
+    ): Exchange? {
+        //Logger
+        LOGGER.info("Visitor API working")
+        //Custom or Default values
+        return if (to.isPresent && from.isPresent && amount.isPresent) {
+            visitorBL?.getCustomExchange(to.get(), from.get(), amount.get())
+        } else {
+            null
+        }
     }
 }

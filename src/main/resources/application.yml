@@ -1,6 +1,12 @@
 server:
   port: 8008
 
+eureka:
+  client:
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
 api:
   key: gybHqhso62y1RsHXMa24UTLgwPy7l4AS
   url: "https://api.apilayer.com/exchangerates_data/convert"
@@ -20,3 +26,41 @@ spring:
       ddl-auto: update
   application:
     name: currency-converter
+
+keycloak:
+  realm: software
+  auth-server-url: http://host.docker.internal:8081
+  autodetect-bearer-only: false
+  ssl-required: none
+  resource: backend
+  credentials:
+    secret: B7CqOW2LLx83ejsoA9eh0H2kUaFcWaaX
+  use-resource-role-mappings: false
+  security-constraints:
+    - auth-roles:
+        - ADMIN
+      security-collections:
+        - name: SERVICIOS DEL ADMINISTRADOR
+          patterns:
+            - /api/v1/pagination
+#          methods: (es methods o omitted-methods, no se pueden usar ambos)
+#            - GET
+#            - POST
+          omitted-methods:
+            - OPTIONS
+
+    - auth-roles:
+        - USER
+      securityCollections:
+        - name: SERVICIOS DE USUARIO
+          patterns:
+            - /api/v1/exchange/*
+          omitted-methods:
+            - OPTIONS
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+

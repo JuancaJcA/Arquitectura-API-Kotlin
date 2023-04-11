@@ -1,7 +1,10 @@
 package API.architecture.kotlinAPI.bl
 
 import API.architecture.kotlinAPI.dao.Currency
+import API.architecture.kotlinAPI.dao.CurrencyV
+import API.architecture.kotlinAPI.dao.CurrencyVisitorImpl
 import API.architecture.kotlinAPI.dao.repository.CurrencyRepository
+import API.architecture.kotlinAPI.dao.repository.CurrencyVisitor
 import API.architecture.kotlinAPI.errorHandling.CustomMessageError
 import API.architecture.kotlinAPI.models.Exchange
 import com.fasterxml.jackson.module.kotlin.readValue
@@ -15,17 +18,18 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.data.domain.PageRequest
 import org.springframework.http.ResponseEntity
+import org.springframework.stereotype.Component
 import org.springframework.stereotype.Service
 import java.io.IOException
 import java.math.BigDecimal
 import java.util.*
 
 @Service
-class ExchangeBL @Autowired constructor(private val currencyRepository: CurrencyRepository) {
+class VisitorBL @Autowired constructor(private val currencyRepository: CurrencyRepository) {
     //Logger
     companion object {
         val objectMapper = jacksonObjectMapper()
-        val LOGGER: Logger = LoggerFactory.getLogger(ExchangeBL::class.java)
+        val LOGGER: Logger = LoggerFactory.getLogger(VisitorBL::class.java)
     }
 
     @Value("\${api.url}")
@@ -36,7 +40,7 @@ class ExchangeBL @Autowired constructor(private val currencyRepository: Currency
 
     fun getCustomExchange(to: String, from: String, amount: BigDecimal): Exchange {
         //Logger
-        LOGGER.info("Visitor working")
+        LOGGER.info("Custom Exchange BL working")
         //Verify amount greater than ZERO
         if (amount <= BigDecimal.ZERO) {
             throw CustomMessageError("Amount value greater or equals to ZERO.")
@@ -57,42 +61,22 @@ class ExchangeBL @Autowired constructor(private val currencyRepository: Currency
                 //Logger
                 LOGGER.info("Custom Response: $obj")
                 //JPA
-                val currency = Currency()
+                val currency = CurrencyV()
                 currency.currencyFrom = from
                 currency.currencyTo = to
                 currency.amount = amount
                 currency.date = Date()
                 currency.result = obj.result
-                currencyRepository.save(currency)
+                //currencyRepository.save(currency)
+
+                // Implementación del patrón Visitor
+                val visitor = CurrencyVisitorImpl()
+                currency.accept(visitor)
                 return obj
             } catch (e: IOException) {
                 throw CustomMessageError(e.toString())
             }
         }
     }
-
-    fun getAllCurrency(page: Int, size: Int): ResponseEntity<Map<String, Any>> {
-        //Logger
-        LOGGER.info("GetAllCurrency BL working")
-        val page = PageRequest.of(page, size)
-        val currency = currencyRepository.findAll(page)
-
-        try {
-            if (currency.isEmpty) {
-                throw CustomMessageError("No data found")
-            } else {
-                //Logger
-                LOGGER.info("GetAllCurrency Response: $currency")
-                val response = mapOf(
-                    "data" to currency.content,
-                    "currentPage" to currency.number,
-                    "totalItems" to currency.totalElements,
-                    "totalPages" to currency.totalPages
-                )
-                return ResponseEntity.ok(response)
-            }
-        } catch (e: CustomMessageError) {
-            throw CustomMessageError(e.toString())
-        }
-    }
 }
+

@@ -12,7 +12,7 @@ class CorsConfig {
     fun corsFilter(): CorsFilter {
         val corsConfiguration = CorsConfiguration();
         corsConfiguration.allowCredentials = false;
-        corsConfiguration.allowedOrigins = listOf("http://localhost:4200");
+        corsConfiguration.allowedOrigins = listOf("http://localhost:4200", "http://host.docker.internal:4200");
         corsConfiguration.allowedHeaders = listOf(
             "Origin",
             "Access-Control-Allow-Origin",

@@ -1,4 +1,21 @@
 ### Get custom exchange value
-GET http://localhost:8008/api/v1/exchange/EUR/GBP/5
+GET http://host.docker.internal:8008/api/v1/exchange/EUR/GBP/5
+Authorization: {{auth-token}}
+### Get pagination Bearer
+GET http://localhost:8008/api/v1/pagination?page=1&size=4
+Authorization: Bearer
 ### Get pagination
 GET http://localhost:8008/api/v1/pagination?page=1&size=4
+Authorization: {{auth-token}}
+### GENERAR TOKEN
+POST http://host.docker.internal:8081/realms/software/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+response_type=code&grant_type=client_credentials&client_id=backend&client_secret=B7CqOW2LLx83ejsoA9eh0H2kUaFcWaaX
+
+> {%
+    client.global.set("auth-token", "Bearer " + response.body["access_token"]);
+    client.log(client.global.get("auth-token"));
+%}
+### Get custom exchange value with visitor
+GET http://localhost:8008/api/v1/visitor/EUR/GBP/5

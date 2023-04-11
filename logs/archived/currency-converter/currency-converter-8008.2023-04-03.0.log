@@ -1,0 +1,671 @@
+2023-04-03 00:47:21.216-0400 [main]  INFO 622 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Starting KotlinApiApplicationKt using Java 19.0.2 on juanca with PID 622 (/home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin/target/classes started by juanca in /home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin)
+2023-04-03 00:47:21.221-0400 [main]  INFO 622 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 00:47:22.762-0400 [main]  INFO 622 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 00:47:22.842-0400 [main]  INFO 622 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2023-04-03 00:47:23.769-0400 [main]  INFO 622 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-04-03 00:47:23.776-0400 [main]  INFO 622 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-03 00:47:23.777-0400 [main]  INFO 622 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-03 00:47:23.870-0400 [main]  INFO 622 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-03 00:47:23.870-0400 [main]  INFO 622 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2414 ms
+2023-04-03 00:47:23.956-0400 [main] ERROR 622 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/exchange/*] the HTTP methods [OPTIONS] are uncovered.
+2023-04-03 00:47:23.956-0400 [main] ERROR 622 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-03 00:47:24.169-0400 [main]  INFO 622 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 00:47:24.273-0400 [main]  INFO 622 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-03 00:47:24.561-0400 [main]  INFO 622 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-03 00:47:24.986-0400 [main]  INFO 622 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-03 00:47:25.560-0400 [main]  INFO 622 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 00:47:25.568-0400 [main]  INFO 622 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 00:47:26.059-0400 [main]  WARN 622 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 00:47:26.913-0400 [main]  INFO 622 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-04-03 00:47:26.929-0400 [main]  INFO 622 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Started KotlinApiApplicationKt in 6.385 seconds (JVM running for 7.876)
+2023-04-03 00:47:50.309-0400 [http-nio-8008-exec-1]  INFO 622 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 00:47:50.310-0400 [http-nio-8008-exec-1]  INFO 622 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-04-03 00:47:50.311-0400 [http-nio-8008-exec-1]  INFO 622 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 1 ms
+2023-04-03 00:48:41.772-0400 [http-nio-8008-exec-3]  INFO 622 --- [o.keycloak.adapters.KeycloakDeployment  ] : Loaded URLs from http://localhost:8081/realms/software/.well-known/openid-configuration
+2023-04-03 00:49:01.070-0400 [http-nio-8008-exec-9]  INFO 622 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency BL working
+2023-04-03 00:49:01.494-0400 [http-nio-8008-exec-9]  INFO 622 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency Response: Page 2 of 5 containing API.architecture.kotlinAPI.dao.Currency instances
+2023-04-03 01:02:52.884-0400 [SpringApplicationShutdownHook]  INFO 622 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 01:23:19.122-0400 [main]  INFO 913 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Starting KotlinApiApplicationKt using Java 19.0.2 on juanca with PID 913 (/home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin/target/classes started by juanca in /home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin)
+2023-04-03 01:23:19.127-0400 [main]  INFO 913 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 01:23:20.559-0400 [main]  INFO 913 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 01:23:20.620-0400 [main]  INFO 913 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2023-04-03 01:23:21.472-0400 [main]  INFO 913 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-04-03 01:23:21.481-0400 [main]  INFO 913 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-03 01:23:21.486-0400 [main]  INFO 913 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-03 01:23:21.594-0400 [main]  INFO 913 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-03 01:23:21.594-0400 [main]  INFO 913 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2327 ms
+2023-04-03 01:23:21.678-0400 [main] ERROR 913 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/exchange/*] the HTTP methods [OPTIONS] are uncovered.
+2023-04-03 01:23:21.678-0400 [main] ERROR 913 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-03 01:23:21.858-0400 [main]  INFO 913 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 01:23:21.955-0400 [main]  INFO 913 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-03 01:23:22.197-0400 [main]  INFO 913 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-03 01:23:22.520-0400 [main]  INFO 913 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-03 01:23:22.934-0400 [main]  INFO 913 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 01:23:22.941-0400 [main]  INFO 913 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 01:23:23.384-0400 [main]  WARN 913 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 01:23:24.160-0400 [main]  INFO 913 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-04-03 01:23:24.171-0400 [main]  INFO 913 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Started KotlinApiApplicationKt in 5.72 seconds (JVM running for 7.528)
+2023-04-03 01:23:30.505-0400 [http-nio-8008-exec-1]  INFO 913 --- [o.keycloak.adapters.KeycloakDeployment  ] : Loaded URLs from http://localhost:8081/realms/software/.well-known/openid-configuration
+2023-04-03 01:23:30.582-0400 [http-nio-8008-exec-1]  INFO 913 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 01:23:30.582-0400 [http-nio-8008-exec-1]  INFO 913 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-04-03 01:23:30.583-0400 [http-nio-8008-exec-1]  INFO 913 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 1 ms
+2023-04-03 01:27:52.856-0400 [SpringApplicationShutdownHook]  INFO 913 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 01:28:02.216-0400 [main]  INFO 1061 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Starting KotlinApiApplicationKt using Java 19.0.2 on juanca with PID 1061 (/home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin/target/classes started by juanca in /home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin)
+2023-04-03 01:28:02.220-0400 [main]  INFO 1061 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 01:28:03.562-0400 [main]  INFO 1061 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 01:28:03.632-0400 [main]  INFO 1061 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interfaces.
+2023-04-03 01:28:04.712-0400 [main]  INFO 1061 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-04-03 01:28:04.726-0400 [main]  INFO 1061 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-03 01:28:04.726-0400 [main]  INFO 1061 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-03 01:28:04.855-0400 [main]  INFO 1061 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-03 01:28:04.856-0400 [main]  INFO 1061 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2521 ms
+2023-04-03 01:28:05.002-0400 [main] ERROR 1061 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-03 01:28:05.177-0400 [main]  INFO 1061 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 01:28:05.285-0400 [main]  INFO 1061 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-03 01:28:05.521-0400 [main]  INFO 1061 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-03 01:28:05.865-0400 [main]  INFO 1061 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-03 01:28:06.375-0400 [main]  INFO 1061 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 01:28:06.384-0400 [main]  INFO 1061 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 01:28:07.037-0400 [main]  WARN 1061 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 01:28:08.126-0400 [main]  INFO 1061 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-04-03 01:28:08.147-0400 [main]  INFO 1061 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Started KotlinApiApplicationKt in 6.702 seconds (JVM running for 8.423)
+2023-04-03 01:28:14.676-0400 [http-nio-8008-exec-1]  INFO 1061 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 01:28:14.677-0400 [http-nio-8008-exec-1]  INFO 1061 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-04-03 01:28:14.678-0400 [http-nio-8008-exec-1]  INFO 1061 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 1 ms
+2023-04-03 01:28:14.818-0400 [http-nio-8008-exec-1]  INFO 1061 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 01:28:14.818-0400 [http-nio-8008-exec-1]  INFO 1061 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Exchange BL working
+2023-04-03 01:28:25.589-0400 [http-nio-8008-exec-1]  INFO 1061 --- [A.a.kotlinAPI.api.ErrorHandler          ] : Error: java.net.SocketTimeoutException: timeout
+2023-04-03 01:28:30.067-0400 [http-nio-8008-exec-3]  INFO 1061 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 01:28:30.068-0400 [http-nio-8008-exec-3]  INFO 1061 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Exchange BL working
+2023-04-03 01:28:30.987-0400 [http-nio-8008-exec-3]  INFO 1061 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Response: Exchange(date=2023-04-03, result=5.69037, success=true, query=Query(amount=5, from=GBP, to=EUR))
+2023-04-03 01:28:54.641-0400 [http-nio-8008-exec-6]  INFO 1061 --- [o.keycloak.adapters.KeycloakDeployment  ] : Loaded URLs from http://localhost:8081/realms/software/.well-known/openid-configuration
+2023-04-03 01:28:54.716-0400 [http-nio-8008-exec-6]  INFO 1061 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency BL working
+2023-04-03 01:28:55.051-0400 [http-nio-8008-exec-6]  INFO 1061 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency Response: Page 2 of 5 containing API.architecture.kotlinAPI.dao.Currency instances
+2023-04-03 01:30:38.651-0400 [SpringApplicationShutdownHook]  INFO 1061 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 01:50:59.544-0400 [main]  INFO 1393 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Starting KotlinApiApplicationKt using Java 19.0.2 on juanca with PID 1393 (/home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin/target/classes started by juanca in /home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin)
+2023-04-03 01:50:59.548-0400 [main]  INFO 1393 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 01:51:00.919-0400 [main]  INFO 1393 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 01:51:00.993-0400 [main]  INFO 1393 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interfaces.
+2023-04-03 01:51:01.954-0400 [main]  INFO 1393 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-04-03 01:51:01.971-0400 [main]  INFO 1393 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-03 01:51:01.971-0400 [main]  INFO 1393 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-03 01:51:02.080-0400 [main]  INFO 1393 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-03 01:51:02.080-0400 [main]  INFO 1393 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2368 ms
+2023-04-03 01:51:02.176-0400 [main] ERROR 1393 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/exchange/*] the HTTP methods [OPTIONS] are uncovered.
+2023-04-03 01:51:02.177-0400 [main] ERROR 1393 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-03 01:51:02.376-0400 [main]  INFO 1393 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 01:51:02.467-0400 [main]  INFO 1393 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-03 01:51:02.711-0400 [main]  INFO 1393 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-03 01:51:03.135-0400 [main]  INFO 1393 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-03 01:51:03.599-0400 [main]  INFO 1393 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 01:51:03.609-0400 [main]  INFO 1393 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 01:51:04.140-0400 [main]  WARN 1393 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 01:51:04.947-0400 [main]  INFO 1393 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-04-03 01:51:04.958-0400 [main]  INFO 1393 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Started KotlinApiApplicationKt in 6.094 seconds (JVM running for 7.949)
+2023-04-03 01:51:13.798-0400 [http-nio-8008-exec-1]  INFO 1393 --- [o.keycloak.adapters.KeycloakDeployment  ] : Loaded URLs from http://localhost:8081/realms/software/.well-known/openid-configuration
+2023-04-03 01:51:13.866-0400 [http-nio-8008-exec-1]  INFO 1393 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 01:51:13.866-0400 [http-nio-8008-exec-1]  INFO 1393 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-04-03 01:51:13.867-0400 [http-nio-8008-exec-1]  INFO 1393 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 1 ms
+2023-04-03 01:51:13.912-0400 [http-nio-8008-exec-1]  INFO 1393 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 01:51:13.912-0400 [http-nio-8008-exec-1]  INFO 1393 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Exchange BL working
+2023-04-03 01:51:15.227-0400 [http-nio-8008-exec-1]  INFO 1393 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Response: Exchange(date=2023-04-03, result=5.68856, success=true, query=Query(amount=5, from=GBP, to=EUR))
+2023-04-03 01:51:18.231-0400 [http-nio-8008-exec-2]  INFO 1393 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency BL working
+2023-04-03 01:51:18.497-0400 [http-nio-8008-exec-2]  INFO 1393 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency Response: Page 2 of 7 containing API.architecture.kotlinAPI.dao.Currency instances
+2023-04-03 01:51:36.959-0400 [http-nio-8008-exec-4]  INFO 1393 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 01:51:36.959-0400 [http-nio-8008-exec-4]  INFO 1393 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Exchange BL working
+2023-04-03 01:51:37.655-0400 [http-nio-8008-exec-4]  INFO 1393 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Response: Exchange(date=2023-04-03, result=5.68856, success=true, query=Query(amount=5, from=GBP, to=EUR))
+2023-04-03 01:51:44.432-0400 [http-nio-8008-exec-6]  INFO 1393 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency BL working
+2023-04-03 01:51:44.483-0400 [http-nio-8008-exec-6]  INFO 1393 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency Response: Page 2 of 7 containing API.architecture.kotlinAPI.dao.Currency instances
+2023-04-03 01:52:57.980-0400 [http-nio-8008-exec-7]  INFO 1393 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 01:52:57.981-0400 [http-nio-8008-exec-7]  INFO 1393 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Exchange BL working
+2023-04-03 01:52:58.960-0400 [http-nio-8008-exec-7]  INFO 1393 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Response: Exchange(date=2023-04-03, result=5.688675, success=true, query=Query(amount=5, from=GBP, to=EUR))
+2023-04-03 01:53:15.667-0400 [SpringApplicationShutdownHook]  INFO 1393 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 13:41:28.307-0400 [main]  INFO 618 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Starting KotlinApiApplicationKt using Java 19.0.2 on juanca with PID 618 (/home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin/target/classes started by juanca in /home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin)
+2023-04-03 13:41:28.311-0400 [main]  INFO 618 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 13:41:29.855-0400 [main]  INFO 618 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 13:41:29.927-0400 [main]  INFO 618 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+2023-04-03 13:41:30.847-0400 [main]  INFO 618 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-04-03 13:41:30.855-0400 [main]  INFO 618 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-03 13:41:30.856-0400 [main]  INFO 618 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-03 13:41:30.945-0400 [main]  INFO 618 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-03 13:41:30.945-0400 [main]  INFO 618 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2451 ms
+2023-04-03 13:41:31.028-0400 [main] ERROR 618 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-03 13:41:31.255-0400 [main]  INFO 618 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 13:41:31.359-0400 [main]  INFO 618 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-03 13:41:31.612-0400 [main]  INFO 618 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-03 13:41:31.984-0400 [main]  INFO 618 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-03 13:41:32.591-0400 [main]  INFO 618 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 13:41:32.598-0400 [main]  INFO 618 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 13:41:33.084-0400 [main]  WARN 618 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 13:41:33.888-0400 [main]  INFO 618 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-04-03 13:41:33.898-0400 [main]  INFO 618 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Started KotlinApiApplicationKt in 6.379 seconds (JVM running for 8.516)
+2023-04-03 13:41:42.865-0400 [http-nio-8008-exec-1]  INFO 618 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 13:41:42.866-0400 [http-nio-8008-exec-1]  INFO 618 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-04-03 13:41:42.868-0400 [http-nio-8008-exec-1]  INFO 618 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 2 ms
+2023-04-03 13:41:42.946-0400 [http-nio-8008-exec-1]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:42:00.994-0400 [http-nio-8008-exec-5]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:42:04.574-0400 [http-nio-8008-exec-7]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:42:04.575-0400 [http-nio-8008-exec-7]  INFO 618 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Exchange BL working
+2023-04-03 13:42:15.374-0400 [http-nio-8008-exec-7]  INFO 618 --- [A.a.kotlinAPI.api.ErrorHandler          ] : Error: java.net.SocketTimeoutException: timeout
+2023-04-03 13:42:17.574-0400 [http-nio-8008-exec-9]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:42:17.574-0400 [http-nio-8008-exec-9]  INFO 618 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Exchange BL working
+2023-04-03 13:42:27.841-0400 [http-nio-8008-exec-9]  INFO 618 --- [A.a.kotlinAPI.api.ErrorHandler          ] : Error: java.net.SocketTimeoutException: timeout
+2023-04-03 13:42:46.746-0400 [http-nio-8008-exec-1]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:42:46.752-0400 [http-nio-8008-exec-1]  INFO 618 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Exchange BL working
+2023-04-03 13:42:57.030-0400 [http-nio-8008-exec-1]  INFO 618 --- [A.a.kotlinAPI.api.ErrorHandler          ] : Error: java.net.SocketTimeoutException: timeout
+2023-04-03 13:43:39.400-0400 [http-nio-8008-exec-3]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:43:39.400-0400 [http-nio-8008-exec-3]  INFO 618 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Exchange BL working
+2023-04-03 13:43:49.644-0400 [http-nio-8008-exec-3]  INFO 618 --- [A.a.kotlinAPI.api.ErrorHandler          ] : Error: java.net.SocketTimeoutException: timeout
+2023-04-03 13:43:55.203-0400 [http-nio-8008-exec-5]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:43:55.203-0400 [http-nio-8008-exec-5]  INFO 618 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Exchange BL working
+2023-04-03 13:44:05.459-0400 [http-nio-8008-exec-5]  INFO 618 --- [A.a.kotlinAPI.api.ErrorHandler          ] : Error: java.net.SocketTimeoutException: timeout
+2023-04-03 13:44:21.821-0400 [http-nio-8008-exec-1]  INFO 618 --- [o.keycloak.adapters.KeycloakDeployment  ] : Loaded URLs from http://localhost:8081/realms/software/.well-known/openid-configuration
+2023-04-03 13:44:21.960-0400 [http-nio-8008-exec-1]  INFO 618 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency BL working
+2023-04-03 13:44:22.366-0400 [http-nio-8008-exec-1]  INFO 618 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency Response: Page 2 of 7 containing API.architecture.kotlinAPI.dao.Currency instances
+2023-04-03 13:44:28.581-0400 [http-nio-8008-exec-2]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:44:31.958-0400 [http-nio-8008-exec-4]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:44:33.281-0400 [http-nio-8008-exec-6]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:44:37.699-0400 [http-nio-8008-exec-8]  INFO 618 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency BL working
+2023-04-03 13:44:37.736-0400 [http-nio-8008-exec-8]  INFO 618 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency Response: Page 2 of 7 containing API.architecture.kotlinAPI.dao.Currency instances
+2023-04-03 13:44:48.339-0400 [http-nio-8008-exec-9]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:44:48.340-0400 [http-nio-8008-exec-9]  INFO 618 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Exchange BL working
+2023-04-03 13:44:58.655-0400 [http-nio-8008-exec-9]  INFO 618 --- [A.a.kotlinAPI.api.ErrorHandler          ] : Error: java.net.SocketTimeoutException: timeout
+2023-04-03 13:45:04.752-0400 [http-nio-8008-exec-1]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:45:04.753-0400 [http-nio-8008-exec-1]  INFO 618 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Exchange BL working
+2023-04-03 13:45:15.112-0400 [http-nio-8008-exec-1]  INFO 618 --- [A.a.kotlinAPI.api.ErrorHandler          ] : Error: java.net.SocketTimeoutException: timeout
+2023-04-03 13:45:36.858-0400 [http-nio-8008-exec-3]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:45:41.520-0400 [http-nio-8008-exec-5]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:45:42.411-0400 [http-nio-8008-exec-7]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:45:43.531-0400 [http-nio-8008-exec-9]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:45:44.314-0400 [http-nio-8008-exec-1]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:45:45.038-0400 [http-nio-8008-exec-3]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:45:45.803-0400 [http-nio-8008-exec-5]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:45:48.242-0400 [http-nio-8008-exec-7]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:45:48.242-0400 [http-nio-8008-exec-7]  INFO 618 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Exchange BL working
+2023-04-03 13:45:52.442-0400 [http-nio-8008-exec-8]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:45:52.442-0400 [http-nio-8008-exec-8]  INFO 618 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Exchange BL working
+2023-04-03 13:45:58.574-0400 [http-nio-8008-exec-7]  INFO 618 --- [A.a.kotlinAPI.api.ErrorHandler          ] : Error: java.net.SocketTimeoutException: timeout
+2023-04-03 13:46:02.801-0400 [http-nio-8008-exec-8]  INFO 618 --- [A.a.kotlinAPI.api.ErrorHandler          ] : Error: java.net.SocketTimeoutException: timeout
+2023-04-03 13:46:07.380-0400 [http-nio-8008-exec-1]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:46:07.380-0400 [http-nio-8008-exec-1]  INFO 618 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Exchange BL working
+2023-04-03 13:46:12.716-0400 [http-nio-8008-exec-1]  INFO 618 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Response: Exchange(date=2023-04-03, result=5.69293, success=true, query=Query(amount=5, from=GBP, to=EUR))
+2023-04-03 13:46:19.396-0400 [http-nio-8008-exec-3]  INFO 618 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency BL working
+2023-04-03 13:46:19.439-0400 [http-nio-8008-exec-3]  INFO 618 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency Response: Page 2 of 7 containing API.architecture.kotlinAPI.dao.Currency instances
+2023-04-03 13:46:22.604-0400 [http-nio-8008-exec-4]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:47:39.977-0400 [http-nio-8008-exec-6]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:47:41.072-0400 [http-nio-8008-exec-9]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:47:42.048-0400 [http-nio-8008-exec-10]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:49:03.144-0400 [http-nio-8008-exec-2]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:49:04.478-0400 [http-nio-8008-exec-4]  INFO 618 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:49:10.359-0400 [SpringApplicationShutdownHook]  INFO 618 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 13:49:28.883-0400 [main]  INFO 902 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Starting KotlinApiApplicationKt using Java 19.0.2 on juanca with PID 902 (/home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin/target/classes started by juanca in /home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin)
+2023-04-03 13:49:28.886-0400 [main]  INFO 902 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 13:49:30.138-0400 [main]  INFO 902 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 13:49:30.208-0400 [main]  INFO 902 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+2023-04-03 13:49:31.190-0400 [main]  INFO 902 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-04-03 13:49:31.200-0400 [main]  INFO 902 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-03 13:49:31.201-0400 [main]  INFO 902 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-03 13:49:31.303-0400 [main]  INFO 902 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-03 13:49:31.303-0400 [main]  INFO 902 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2311 ms
+2023-04-03 13:49:31.431-0400 [main] ERROR 902 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-03 13:49:31.633-0400 [main]  INFO 902 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 13:49:31.725-0400 [main]  INFO 902 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-03 13:49:32.003-0400 [main]  INFO 902 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-03 13:49:32.357-0400 [main]  INFO 902 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-03 13:49:32.862-0400 [main]  INFO 902 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 13:49:32.871-0400 [main]  INFO 902 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 13:49:33.431-0400 [main]  WARN 902 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 13:49:34.465-0400 [main]  INFO 902 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-04-03 13:49:34.488-0400 [main]  INFO 902 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Started KotlinApiApplicationKt in 6.716 seconds (JVM running for 9.756)
+2023-04-03 13:49:40.134-0400 [http-nio-8008-exec-1]  INFO 902 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 13:49:40.134-0400 [http-nio-8008-exec-1]  INFO 902 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-04-03 13:49:40.136-0400 [http-nio-8008-exec-1]  INFO 902 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 1 ms
+2023-04-03 13:49:40.231-0400 [http-nio-8008-exec-1]  INFO 902 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:49:44.257-0400 [http-nio-8008-exec-3]  INFO 902 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:50:07.829-0400 [http-nio-8008-exec-5]  INFO 902 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:50:07.830-0400 [http-nio-8008-exec-5]  INFO 902 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Exchange BL working
+2023-04-03 13:50:09.106-0400 [http-nio-8008-exec-5]  INFO 902 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Response: Exchange(date=2023-04-03, result=5.692835, success=true, query=Query(amount=5, from=GBP, to=EUR))
+2023-04-03 13:52:29.738-0400 [SpringApplicationShutdownHook]  INFO 902 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 13:52:46.052-0400 [main]  INFO 1015 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Starting KotlinApiApplicationKt using Java 19.0.2 on juanca with PID 1015 (/home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin/target/classes started by juanca in /home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin)
+2023-04-03 13:52:46.056-0400 [main]  INFO 1015 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 13:52:47.208-0400 [main]  INFO 1015 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 13:52:47.272-0400 [main]  INFO 1015 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2023-04-03 13:52:48.287-0400 [main]  INFO 1015 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-04-03 13:52:48.297-0400 [main]  INFO 1015 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-03 13:52:48.297-0400 [main]  INFO 1015 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-03 13:52:48.375-0400 [main]  INFO 1015 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-03 13:52:48.375-0400 [main]  INFO 1015 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2221 ms
+2023-04-03 13:52:48.449-0400 [main] ERROR 1015 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-03 13:52:48.688-0400 [main]  INFO 1015 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 13:52:48.724-0400 [main]  INFO 1015 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-03 13:52:48.901-0400 [main]  INFO 1015 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-03 13:52:49.131-0400 [main]  INFO 1015 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-03 13:52:49.564-0400 [main]  INFO 1015 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 13:52:49.572-0400 [main]  INFO 1015 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 13:52:50.049-0400 [main]  WARN 1015 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 13:52:50.940-0400 [main]  INFO 1015 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-04-03 13:52:50.956-0400 [main]  INFO 1015 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Started KotlinApiApplicationKt in 5.763 seconds (JVM running for 7.047)
+2023-04-03 13:52:53.361-0400 [http-nio-8008-exec-1]  INFO 1015 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 13:52:53.361-0400 [http-nio-8008-exec-1]  INFO 1015 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-04-03 13:52:53.363-0400 [http-nio-8008-exec-1]  INFO 1015 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 2 ms
+2023-04-03 13:52:53.409-0400 [http-nio-8008-exec-1]  INFO 1015 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 13:53:33.590-0400 [SpringApplicationShutdownHook]  INFO 1015 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 13:53:43.341-0400 [main]  INFO 1145 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Starting KotlinApiApplicationKt using Java 19.0.2 on juanca with PID 1145 (/home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin/target/classes started by juanca in /home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin)
+2023-04-03 13:53:43.345-0400 [main]  INFO 1145 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 13:53:44.481-0400 [main]  INFO 1145 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 13:53:44.555-0400 [main]  INFO 1145 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interfaces.
+2023-04-03 13:53:45.493-0400 [main]  INFO 1145 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-04-03 13:53:45.507-0400 [main]  INFO 1145 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-03 13:53:45.508-0400 [main]  INFO 1145 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-03 13:53:45.583-0400 [main]  INFO 1145 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-03 13:53:45.583-0400 [main]  INFO 1145 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2126 ms
+2023-04-03 13:53:45.669-0400 [main] ERROR 1145 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-03 13:53:45.828-0400 [main]  INFO 1145 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 13:53:45.866-0400 [main]  INFO 1145 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-03 13:53:45.998-0400 [main]  INFO 1145 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-03 13:53:46.233-0400 [main]  INFO 1145 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-03 13:53:46.607-0400 [main]  INFO 1145 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 13:53:46.615-0400 [main]  INFO 1145 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 13:53:47.062-0400 [main]  WARN 1145 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 13:53:47.871-0400 [main]  INFO 1145 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-04-03 13:53:47.881-0400 [main]  INFO 1145 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Started KotlinApiApplicationKt in 5.408 seconds (JVM running for 7.009)
+2023-04-03 13:53:52.827-0400 [http-nio-8008-exec-1]  INFO 1145 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 13:53:52.828-0400 [http-nio-8008-exec-1]  INFO 1145 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-04-03 13:53:52.829-0400 [http-nio-8008-exec-1]  INFO 1145 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 1 ms
+2023-04-03 13:53:52.874-0400 [http-nio-8008-exec-1]  INFO 1145 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Visitor API working
+2023-04-03 13:54:44.785-0400 [SpringApplicationShutdownHook]  INFO 1145 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 13:54:57.059-0400 [main]  INFO 1282 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Starting KotlinApiApplicationKt using Java 19.0.2 on juanca with PID 1282 (/home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin/target/classes started by juanca in /home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin)
+2023-04-03 13:54:57.067-0400 [main]  INFO 1282 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 13:54:59.127-0400 [main]  INFO 1282 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 13:54:59.211-0400 [main]  INFO 1282 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interfaces.
+2023-04-03 13:55:00.784-0400 [main]  INFO 1282 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-04-03 13:55:00.803-0400 [main]  INFO 1282 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-03 13:55:00.804-0400 [main]  INFO 1282 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-03 13:55:01.011-0400 [main]  INFO 1282 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-03 13:55:01.012-0400 [main]  INFO 1282 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3727 ms
+2023-04-03 13:55:01.127-0400 [main] ERROR 1282 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-03 13:55:01.418-0400 [main]  INFO 1282 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 13:55:01.539-0400 [main]  INFO 1282 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-03 13:55:01.999-0400 [main]  INFO 1282 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-03 13:55:02.272-0400 [main]  INFO 1282 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-03 13:55:02.846-0400 [main]  INFO 1282 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 13:55:02.859-0400 [main]  INFO 1282 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 13:55:03.377-0400 [main]  WARN 1282 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 13:55:04.229-0400 [main]  INFO 1282 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-04-03 13:55:04.247-0400 [main]  INFO 1282 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Started KotlinApiApplicationKt in 8.404 seconds (JVM running for 10.797)
+2023-04-03 13:55:06.826-0400 [http-nio-8008-exec-1]  INFO 1282 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 13:55:06.827-0400 [http-nio-8008-exec-1]  INFO 1282 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-04-03 13:55:06.828-0400 [http-nio-8008-exec-1]  INFO 1282 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 1 ms
+2023-04-03 13:55:06.891-0400 [http-nio-8008-exec-1]  INFO 1282 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Visitor API working
+2023-04-03 13:55:06.892-0400 [http-nio-8008-exec-1]  INFO 1282 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : If
+2023-04-03 13:57:54.174-0400 [SpringApplicationShutdownHook]  INFO 1282 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 13:58:04.562-0400 [main]  INFO 1436 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Starting KotlinApiApplicationKt using Java 19.0.2 on juanca with PID 1436 (/home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin/target/classes started by juanca in /home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin)
+2023-04-03 13:58:04.565-0400 [main]  INFO 1436 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 13:58:05.742-0400 [main]  INFO 1436 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 13:58:05.801-0400 [main]  INFO 1436 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+2023-04-03 13:58:06.706-0400 [main]  INFO 1436 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-04-03 13:58:06.717-0400 [main]  INFO 1436 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-03 13:58:06.718-0400 [main]  INFO 1436 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-03 13:58:06.789-0400 [main]  INFO 1436 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-03 13:58:06.789-0400 [main]  INFO 1436 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2131 ms
+2023-04-03 13:58:06.864-0400 [main] ERROR 1436 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-03 13:58:07.026-0400 [main]  INFO 1436 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 13:58:07.072-0400 [main]  INFO 1436 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-03 13:58:07.197-0400 [main]  INFO 1436 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-03 13:58:07.429-0400 [main]  INFO 1436 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-03 13:58:07.814-0400 [main]  INFO 1436 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 13:58:07.822-0400 [main]  INFO 1436 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 13:58:08.291-0400 [main]  WARN 1436 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 13:58:09.252-0400 [main]  INFO 1436 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-04-03 13:58:09.264-0400 [main]  INFO 1436 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Started KotlinApiApplicationKt in 5.354 seconds (JVM running for 6.707)
+2023-04-03 13:58:13.294-0400 [http-nio-8008-exec-1]  INFO 1436 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 13:58:13.294-0400 [http-nio-8008-exec-1]  INFO 1436 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-04-03 13:58:13.296-0400 [http-nio-8008-exec-1]  INFO 1436 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 1 ms
+2023-04-03 13:58:13.348-0400 [http-nio-8008-exec-1]  INFO 1436 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Visitor API working
+2023-04-03 13:58:13.348-0400 [http-nio-8008-exec-1]  INFO 1436 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : If
+2023-04-03 13:58:13.349-0400 [http-nio-8008-exec-1]  INFO 1436 --- [API.architecture.kotlinAPI.bl.VisitorBL ] : Custom Exchange BL working
+2023-04-03 13:58:14.527-0400 [http-nio-8008-exec-1]  INFO 1436 --- [API.architecture.kotlinAPI.bl.VisitorBL ] : Custom Response: Exchange(date=2023-04-03, result=5.69198, success=true, query=Query(amount=5, from=GBP, to=EUR))
+2023-04-03 13:58:14.533-0400 [http-nio-8008-exec-1] ERROR 1436 --- [o.a.c.c.C.[.[.[/].[dispatcherServlet]   ] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is kotlin.NotImplementedError: An operation is not implemented.] with root cause
+
+kotlin.NotImplementedError: An operation is not implemented.
+	at API.architecture.kotlinAPI.dao.CurrencyVisitorImpl.<clinit>(CurrencyVisitorImpl.kt:12)
+	at API.architecture.kotlinAPI.bl.VisitorBL.getCustomExchange(VisitorBL.kt:73)
+	at API.architecture.kotlinAPI.api.ExchangeAPI.getVisitor(ExchangeAPI.kt:73)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.keycloak.adapters.tomcat.AbstractAuthenticatedActionsValve.invoke(AbstractAuthenticatedActionsValve.java:67)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:181)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+
+2023-04-03 13:58:21.951-0400 [http-nio-8008-exec-2]  INFO 1436 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Visitor API working
+2023-04-03 13:58:21.951-0400 [http-nio-8008-exec-2]  INFO 1436 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : If
+2023-04-03 13:58:21.951-0400 [http-nio-8008-exec-2]  INFO 1436 --- [API.architecture.kotlinAPI.bl.VisitorBL ] : Custom Exchange BL working
+2023-04-03 13:58:22.788-0400 [http-nio-8008-exec-2]  INFO 1436 --- [API.architecture.kotlinAPI.bl.VisitorBL ] : Custom Response: Exchange(date=2023-04-03, result=5.69198, success=true, query=Query(amount=5, from=GBP, to=EUR))
+2023-04-03 13:58:22.795-0400 [http-nio-8008-exec-2] ERROR 1436 --- [o.a.c.c.C.[.[.[/].[dispatcherServlet]   ] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class API.architecture.kotlinAPI.dao.CurrencyVisitorImpl] with root cause
+
+java.lang.ExceptionInInitializerError: Exception kotlin.NotImplementedError: An operation is not implemented. [in thread "http-nio-8008-exec-1"]
+	at API.architecture.kotlinAPI.dao.CurrencyVisitorImpl.<clinit>(CurrencyVisitorImpl.kt:12)
+	at API.architecture.kotlinAPI.bl.VisitorBL.getCustomExchange(VisitorBL.kt:73)
+	at API.architecture.kotlinAPI.api.ExchangeAPI.getVisitor(ExchangeAPI.kt:73)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.keycloak.adapters.tomcat.AbstractAuthenticatedActionsValve.invoke(AbstractAuthenticatedActionsValve.java:67)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:181)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+
+2023-04-03 14:03:50.332-0400 [SpringApplicationShutdownHook]  INFO 1436 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 14:04:10.956-0400 [main]  INFO 1599 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Starting KotlinApiApplicationKt using Java 19.0.2 on juanca with PID 1599 (/home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin/target/classes started by juanca in /home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin)
+2023-04-03 14:04:10.963-0400 [main]  INFO 1599 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 14:04:13.009-0400 [main]  INFO 1599 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 14:04:13.107-0400 [main]  INFO 1599 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interfaces.
+2023-04-03 14:04:14.722-0400 [main]  INFO 1599 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-04-03 14:04:14.738-0400 [main]  INFO 1599 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-03 14:04:14.739-0400 [main]  INFO 1599 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-03 14:04:14.853-0400 [main]  INFO 1599 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-03 14:04:14.854-0400 [main]  INFO 1599 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3778 ms
+2023-04-03 14:04:15.028-0400 [main] ERROR 1599 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-03 14:04:15.270-0400 [main]  INFO 1599 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 14:04:15.310-0400 [main]  INFO 1599 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-03 14:04:15.429-0400 [main]  INFO 1599 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-03 14:04:15.651-0400 [main]  INFO 1599 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-03 14:04:16.212-0400 [main]  INFO 1599 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 14:04:16.224-0400 [main]  INFO 1599 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 14:04:16.704-0400 [main]  WARN 1599 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 14:04:17.546-0400 [main]  INFO 1599 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-04-03 14:04:17.558-0400 [main]  INFO 1599 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Started KotlinApiApplicationKt in 7.741 seconds (JVM running for 9.51)
+2023-04-03 14:04:22.648-0400 [http-nio-8008-exec-1]  INFO 1599 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 14:04:22.648-0400 [http-nio-8008-exec-1]  INFO 1599 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-04-03 14:04:22.650-0400 [http-nio-8008-exec-1]  INFO 1599 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 2 ms
+2023-04-03 14:04:22.719-0400 [http-nio-8008-exec-1]  INFO 1599 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 14:04:22.719-0400 [http-nio-8008-exec-1]  INFO 1599 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Visitor working
+2023-04-03 14:04:23.955-0400 [http-nio-8008-exec-1]  INFO 1599 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Response: Exchange(date=2023-04-03, result=5.69309, success=true, query=Query(amount=5, from=GBP, to=EUR))
+2023-04-03 14:04:26.441-0400 [http-nio-8008-exec-3]  INFO 1599 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Visitor API working
+2023-04-03 14:04:26.441-0400 [http-nio-8008-exec-3]  INFO 1599 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : If
+2023-04-03 14:04:26.442-0400 [http-nio-8008-exec-3]  INFO 1599 --- [API.architecture.kotlinAPI.bl.VisitorBL ] : Custom Exchange BL working
+2023-04-03 14:04:27.321-0400 [http-nio-8008-exec-3]  INFO 1599 --- [API.architecture.kotlinAPI.bl.VisitorBL ] : Custom Response: Exchange(date=2023-04-03, result=5.69309, success=true, query=Query(amount=5, from=GBP, to=EUR))
+2023-04-03 14:04:27.324-0400 [http-nio-8008-exec-3] ERROR 1599 --- [o.a.c.c.C.[.[.[/].[dispatcherServlet]   ] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is kotlin.NotImplementedError: An operation is not implemented: Not yet implemented] with root cause
+
+kotlin.NotImplementedError: An operation is not implemented: Not yet implemented
+	at API.architecture.kotlinAPI.dao.CurrencyVisitorImpl.visit(CurrencyVisitorImpl.kt:41)
+	at API.architecture.kotlinAPI.dao.CurrencyV.accept(CurrencyV.kt:23)
+	at API.architecture.kotlinAPI.bl.VisitorBL.getCustomExchange(VisitorBL.kt:74)
+	at API.architecture.kotlinAPI.api.ExchangeAPI.getVisitor(ExchangeAPI.kt:73)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.keycloak.adapters.tomcat.AbstractAuthenticatedActionsValve.invoke(AbstractAuthenticatedActionsValve.java:67)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:181)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+
+2023-04-03 14:05:33.385-0400 [SpringApplicationShutdownHook]  INFO 1599 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 14:05:40.914-0400 [main]  INFO 1746 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Starting KotlinApiApplicationKt using Java 19.0.2 on juanca with PID 1746 (/home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin/target/classes started by juanca in /home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin)
+2023-04-03 14:05:40.917-0400 [main]  INFO 1746 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 14:05:42.068-0400 [main]  INFO 1746 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 14:05:42.147-0400 [main]  INFO 1746 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interfaces.
+2023-04-03 14:05:43.105-0400 [main]  INFO 1746 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-04-03 14:05:43.113-0400 [main]  INFO 1746 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-03 14:05:43.114-0400 [main]  INFO 1746 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-03 14:05:43.201-0400 [main]  INFO 1746 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-03 14:05:43.202-0400 [main]  INFO 1746 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2203 ms
+2023-04-03 14:05:43.337-0400 [main] ERROR 1746 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-03 14:05:43.487-0400 [main]  INFO 1746 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 14:05:43.523-0400 [main]  INFO 1746 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-03 14:05:43.688-0400 [main]  INFO 1746 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-03 14:05:43.928-0400 [main]  INFO 1746 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-03 14:05:44.310-0400 [main]  INFO 1746 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 14:05:44.318-0400 [main]  INFO 1746 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 14:05:44.829-0400 [main]  WARN 1746 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 14:05:45.641-0400 [main]  INFO 1746 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-04-03 14:05:45.652-0400 [main]  INFO 1746 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Started KotlinApiApplicationKt in 5.438 seconds (JVM running for 6.863)
+2023-04-03 14:05:48.646-0400 [http-nio-8008-exec-1]  INFO 1746 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 14:05:48.647-0400 [http-nio-8008-exec-1]  INFO 1746 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-04-03 14:05:48.648-0400 [http-nio-8008-exec-1]  INFO 1746 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 1 ms
+2023-04-03 14:05:48.697-0400 [http-nio-8008-exec-1]  INFO 1746 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Visitor API working
+2023-04-03 14:05:48.697-0400 [http-nio-8008-exec-1]  INFO 1746 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : If
+2023-04-03 14:05:48.698-0400 [http-nio-8008-exec-1]  INFO 1746 --- [API.architecture.kotlinAPI.bl.VisitorBL ] : Custom Exchange BL working
+2023-04-03 14:05:49.613-0400 [http-nio-8008-exec-1]  INFO 1746 --- [API.architecture.kotlinAPI.bl.VisitorBL ] : Custom Response: Exchange(date=2023-04-03, result=5.69334, success=true, query=Query(amount=5, from=GBP, to=EUR))
+2023-04-03 14:05:49.614-0400 [http-nio-8008-exec-1]  INFO 1746 --- [A.a.kotlinAPI.dao.CurrencyVisitorImpl   ] : Saving currency to database: API.architecture.kotlinAPI.dao.CurrencyV@57e024d8
+2023-04-03 14:05:57.607-0400 [http-nio-8008-exec-2]  INFO 1746 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Visitor API working
+2023-04-03 14:05:57.607-0400 [http-nio-8008-exec-2]  INFO 1746 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : If
+2023-04-03 14:05:57.607-0400 [http-nio-8008-exec-2]  INFO 1746 --- [API.architecture.kotlinAPI.bl.VisitorBL ] : Custom Exchange BL working
+2023-04-03 14:05:58.476-0400 [http-nio-8008-exec-2]  INFO 1746 --- [API.architecture.kotlinAPI.bl.VisitorBL ] : Custom Response: Exchange(date=2023-04-03, result=5.69334, success=true, query=Query(amount=5, from=GBP, to=EUR))
+2023-04-03 14:05:58.476-0400 [http-nio-8008-exec-2]  INFO 1746 --- [A.a.kotlinAPI.dao.CurrencyVisitorImpl   ] : Saving currency to database: API.architecture.kotlinAPI.dao.CurrencyV@7982fe6e
+2023-04-03 14:07:21.341-0400 [SpringApplicationShutdownHook]  INFO 1746 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 14:08:38.652-0400 [main]  INFO 1942 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Starting KotlinApiApplicationKt using Java 19.0.2 on juanca with PID 1942 (/home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin/target/classes started by juanca in /home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin)
+2023-04-03 14:08:38.655-0400 [main]  INFO 1942 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 14:08:40.143-0400 [main]  INFO 1942 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 14:08:40.200-0400 [main]  INFO 1942 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2023-04-03 14:08:41.130-0400 [main]  INFO 1942 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-04-03 14:08:41.142-0400 [main]  INFO 1942 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-03 14:08:41.142-0400 [main]  INFO 1942 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-03 14:08:41.249-0400 [main]  INFO 1942 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-03 14:08:41.249-0400 [main]  INFO 1942 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2485 ms
+2023-04-03 14:08:41.334-0400 [main] ERROR 1942 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-03 14:08:41.496-0400 [main]  INFO 1942 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 14:08:41.546-0400 [main]  INFO 1942 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-03 14:08:41.678-0400 [main]  INFO 1942 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-03 14:08:41.884-0400 [main]  INFO 1942 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-03 14:08:42.250-0400 [main]  INFO 1942 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 14:08:42.257-0400 [main]  INFO 1942 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 14:08:42.717-0400 [main]  WARN 1942 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 14:08:43.519-0400 [main]  INFO 1942 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-04-03 14:08:43.529-0400 [main]  INFO 1942 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Started KotlinApiApplicationKt in 5.466 seconds (JVM running for 7.025)
+2023-04-03 14:08:46.532-0400 [http-nio-8008-exec-1]  INFO 1942 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 14:08:46.532-0400 [http-nio-8008-exec-1]  INFO 1942 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-04-03 14:08:46.533-0400 [http-nio-8008-exec-1]  INFO 1942 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 1 ms
+2023-04-03 14:08:46.579-0400 [http-nio-8008-exec-1]  INFO 1942 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Visitor API working
+2023-04-03 14:08:46.579-0400 [http-nio-8008-exec-1]  INFO 1942 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : If
+2023-04-03 14:08:46.580-0400 [http-nio-8008-exec-1]  INFO 1942 --- [API.architecture.kotlinAPI.bl.VisitorBL ] : Custom Exchange BL working
+2023-04-03 14:08:47.640-0400 [http-nio-8008-exec-1]  INFO 1942 --- [API.architecture.kotlinAPI.bl.VisitorBL ] : Custom Response: Exchange(date=2023-04-03, result=5.692965, success=true, query=Query(amount=5, from=GBP, to=EUR))
+2023-04-03 14:08:47.641-0400 [http-nio-8008-exec-1]  INFO 1942 --- [A.a.kotlinAPI.dao.CurrencyVisitorImpl   ] : Saving currency to database: API.architecture.kotlinAPI.dao.CurrencyV@173a980e
+2023-04-03 14:08:55.705-0400 [http-nio-8008-exec-2]  INFO 1942 --- [o.keycloak.adapters.KeycloakDeployment  ] : Loaded URLs from http://localhost:8081/realms/software/.well-known/openid-configuration
+2023-04-03 14:08:55.778-0400 [http-nio-8008-exec-2]  INFO 1942 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency BL working
+2023-04-03 14:08:56.062-0400 [http-nio-8008-exec-2]  INFO 1942 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency Response: Page 2 of 8 containing API.architecture.kotlinAPI.dao.Currency instances
+2023-04-03 14:08:59.433-0400 [http-nio-8008-exec-5]  INFO 1942 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Visitor API working
+2023-04-03 14:08:59.433-0400 [http-nio-8008-exec-5]  INFO 1942 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : If
+2023-04-03 14:08:59.433-0400 [http-nio-8008-exec-5]  INFO 1942 --- [API.architecture.kotlinAPI.bl.VisitorBL ] : Custom Exchange BL working
+2023-04-03 14:09:00.230-0400 [http-nio-8008-exec-5]  INFO 1942 --- [API.architecture.kotlinAPI.bl.VisitorBL ] : Custom Response: Exchange(date=2023-04-03, result=5.692965, success=true, query=Query(amount=5, from=GBP, to=EUR))
+2023-04-03 14:09:00.231-0400 [http-nio-8008-exec-5]  INFO 1942 --- [A.a.kotlinAPI.dao.CurrencyVisitorImpl   ] : Saving currency to database: API.architecture.kotlinAPI.dao.CurrencyV@67e27126
+2023-04-03 14:09:02.577-0400 [http-nio-8008-exec-7]  INFO 1942 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency BL working
+2023-04-03 14:09:02.609-0400 [http-nio-8008-exec-7]  INFO 1942 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency Response: Page 2 of 8 containing API.architecture.kotlinAPI.dao.Currency instances
+2023-04-03 14:09:05.856-0400 [http-nio-8008-exec-8]  INFO 1942 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency BL working
+2023-04-03 14:09:05.888-0400 [http-nio-8008-exec-8]  INFO 1942 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency Response: Page 2 of 8 containing API.architecture.kotlinAPI.dao.Currency instances
+2023-04-03 14:09:09.081-0400 [http-nio-8008-exec-10]  INFO 1942 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Visitor API working
+2023-04-03 14:09:09.081-0400 [http-nio-8008-exec-10]  INFO 1942 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : If
+2023-04-03 14:09:09.081-0400 [http-nio-8008-exec-10]  INFO 1942 --- [API.architecture.kotlinAPI.bl.VisitorBL ] : Custom Exchange BL working
+2023-04-03 14:09:09.855-0400 [http-nio-8008-exec-10]  INFO 1942 --- [API.architecture.kotlinAPI.bl.VisitorBL ] : Custom Response: Exchange(date=2023-04-03, result=5.69279, success=true, query=Query(amount=5, from=GBP, to=EUR))
+2023-04-03 14:09:09.855-0400 [http-nio-8008-exec-10]  INFO 1942 --- [A.a.kotlinAPI.dao.CurrencyVisitorImpl   ] : Saving currency to database: API.architecture.kotlinAPI.dao.CurrencyV@5e1149b8
+2023-04-03 14:09:16.879-0400 [http-nio-8008-exec-3]  INFO 1942 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency BL working
+2023-04-03 14:09:16.915-0400 [http-nio-8008-exec-3]  INFO 1942 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency Response: Page 2 of 8 containing API.architecture.kotlinAPI.dao.Currency instances
+2023-04-03 14:09:20.784-0400 [http-nio-8008-exec-5]  INFO 1942 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Visitor API working
+2023-04-03 14:09:20.784-0400 [http-nio-8008-exec-5]  INFO 1942 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : If
+2023-04-03 14:09:20.784-0400 [http-nio-8008-exec-5]  INFO 1942 --- [API.architecture.kotlinAPI.bl.VisitorBL ] : Custom Exchange BL working
+2023-04-03 14:09:21.605-0400 [http-nio-8008-exec-5]  INFO 1942 --- [API.architecture.kotlinAPI.bl.VisitorBL ] : Custom Response: Exchange(date=2023-04-03, result=5.69279, success=true, query=Query(amount=5, from=GBP, to=EUR))
+2023-04-03 14:09:21.605-0400 [http-nio-8008-exec-5]  INFO 1942 --- [A.a.kotlinAPI.dao.CurrencyVisitorImpl   ] : Saving currency to database: API.architecture.kotlinAPI.dao.CurrencyV@1a31d7f3
+2023-04-03 14:10:48.151-0400 [SpringApplicationShutdownHook]  INFO 1942 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 14:59:21.860-0400 [main]  INFO 2399 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Starting KotlinApiApplicationKt using Java 19.0.2 on juanca with PID 2399 (/home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin/target/classes started by juanca in /home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin)
+2023-04-03 14:59:21.871-0400 [main]  INFO 2399 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 14:59:23.909-0400 [main]  INFO 2399 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 14:59:23.995-0400 [main]  INFO 2399 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interfaces.
+2023-04-03 14:59:25.374-0400 [main]  INFO 2399 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-04-03 14:59:25.388-0400 [main]  INFO 2399 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-03 14:59:25.389-0400 [main]  INFO 2399 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-03 14:59:25.641-0400 [main]  INFO 2399 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-03 14:59:25.641-0400 [main]  INFO 2399 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3541 ms
+2023-04-03 14:59:25.769-0400 [main] ERROR 2399 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/exchange/*] the HTTP methods [OPTIONS] are uncovered.
+2023-04-03 14:59:25.769-0400 [main] ERROR 2399 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-03 14:59:26.029-0400 [main]  INFO 2399 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 14:59:26.128-0400 [main]  INFO 2399 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-03 14:59:26.441-0400 [main]  INFO 2399 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-03 14:59:27.086-0400 [main]  INFO 2399 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-03 14:59:27.673-0400 [main]  INFO 2399 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 14:59:27.682-0400 [main]  INFO 2399 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 14:59:28.554-0400 [main]  WARN 2399 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 14:59:29.855-0400 [main]  INFO 2399 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-04-03 14:59:29.884-0400 [main]  INFO 2399 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Started KotlinApiApplicationKt in 8.738 seconds (JVM running for 10.658)
+2023-04-03 14:59:33.371-0400 [http-nio-8008-exec-1]  INFO 2399 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 14:59:33.372-0400 [http-nio-8008-exec-1]  INFO 2399 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-04-03 14:59:33.373-0400 [http-nio-8008-exec-1]  INFO 2399 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 1 ms
+2023-04-03 14:59:50.608-0400 [http-nio-8008-exec-2]  INFO 2399 --- [o.keycloak.adapters.KeycloakDeployment  ] : Loaded URLs from http://host.docker.internal:8081/realms/software/.well-known/openid-configuration
+2023-04-03 15:02:46.583-0400 [http-nio-8008-exec-3]  INFO 2399 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Visitor API working
+2023-04-03 15:02:46.585-0400 [http-nio-8008-exec-3]  INFO 2399 --- [API.architecture.kotlinAPI.bl.VisitorBL ] : Custom Exchange BL working
+2023-04-03 15:02:48.143-0400 [http-nio-8008-exec-3]  INFO 2399 --- [API.architecture.kotlinAPI.bl.VisitorBL ] : Custom Response: Exchange(date=2023-04-03, result=5.694585, success=true, query=Query(amount=5, from=GBP, to=EUR))
+2023-04-03 15:02:48.144-0400 [http-nio-8008-exec-3]  INFO 2399 --- [A.a.kotlinAPI.dao.CurrencyVisitorImpl   ] : Saving currency to database: API.architecture.kotlinAPI.dao.CurrencyV@7ec4cdc5
+2023-04-03 15:03:11.205-0400 [http-nio-8008-exec-5]  INFO 2399 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 15:03:11.205-0400 [http-nio-8008-exec-5]  INFO 2399 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Visitor working
+2023-04-03 15:03:11.977-0400 [http-nio-8008-exec-5]  INFO 2399 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Response: Exchange(date=2023-04-03, result=5.695015, success=true, query=Query(amount=5, from=GBP, to=EUR))
+2023-04-03 15:03:24.046-0400 [http-nio-8008-exec-1]  INFO 2399 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency BL working
+2023-04-03 15:03:24.381-0400 [http-nio-8008-exec-1]  INFO 2399 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : GetAllCurrency Response: Page 2 of 8 containing API.architecture.kotlinAPI.dao.Currency instances
+2023-04-03 15:03:58.630-0400 [http-nio-8008-exec-3]  INFO 2399 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 15:03:58.631-0400 [http-nio-8008-exec-3]  INFO 2399 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Visitor working
+2023-04-03 15:04:04.807-0400 [http-nio-8008-exec-4]  INFO 2399 --- [A.a.kotlinAPI.api.ExchangeAPI           ] : Custom Exchange API working
+2023-04-03 15:04:04.808-0400 [http-nio-8008-exec-4]  INFO 2399 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Visitor working
+2023-04-03 15:04:08.960-0400 [http-nio-8008-exec-3]  INFO 2399 --- [A.a.kotlinAPI.api.ErrorHandler          ] : Error: java.net.SocketTimeoutException: timeout
+2023-04-03 15:04:13.785-0400 [http-nio-8008-exec-4]  INFO 2399 --- [A.architecture.kotlinAPI.bl.ExchangeBL  ] : Custom Response: Exchange(date=2023-04-03, result=5.69556, success=true, query=Query(amount=5, from=GBP, to=EUR))
+2023-04-03 15:23:35.638-0400 [SpringApplicationShutdownHook]  INFO 2399 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'

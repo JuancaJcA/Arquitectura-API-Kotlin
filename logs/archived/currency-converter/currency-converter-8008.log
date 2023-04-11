@@ -1,0 +1,535 @@
+2023-04-10 20:24:18.737-0400 [main]  INFO 2258 --- [c.c.c.ConfigServicePropertySourceLocator] : Fetching config from server at : http://localhost:8888
+2023-04-10 20:24:20.518-0400 [main]  INFO 2258 --- [c.c.c.ConfigServicePropertySourceLocator] : Located environment: name=currency-converter, profiles=[default], label=null, version=c34437fc9faeb3ad14a13743df664e08df831eb6, state=null
+2023-04-10 20:24:20.519-0400 [main]  INFO 2258 --- [b.c.PropertySourceBootstrapConfiguration] : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/JuancaJcA/server-config.git/currency-converter.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/JuancaJcA/server-config.git/application.yml'}]
+2023-04-10 20:24:20.525-0400 [main]  INFO 2258 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-04-10 20:24:21.415-0400 [main]  INFO 2258 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-10 20:24:21.604-0400 [main]  INFO 2258 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 165 ms. Found 1 JPA repository interfaces.
+2023-04-10 20:24:22.058-0400 [main]  INFO 2258 --- [o.s.cloud.context.scope.GenericScope    ] : BeanFactory id=b6a96b64-b90c-33b1-916d-9f9d04abdbc2
+2023-04-10 20:24:22.719-0400 [main]  INFO 2258 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 9009 (http)
+2023-04-10 20:24:22.727-0400 [main]  INFO 2258 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-10 20:24:22.727-0400 [main]  INFO 2258 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-10 20:24:22.854-0400 [main]  INFO 2258 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-10 20:24:22.854-0400 [main]  INFO 2258 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2312 ms
+2023-04-10 20:24:22.966-0400 [main] ERROR 2258 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/exchange/*] the HTTP methods [OPTIONS] are uncovered.
+2023-04-10 20:24:22.967-0400 [main] ERROR 2258 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-10 20:24:23.154-0400 [main]  INFO 2258 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-10 20:24:23.258-0400 [main]  INFO 2258 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-10 20:24:23.511-0400 [main]  INFO 2258 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-10 20:24:23.681-0400 [main]  WARN 2258 --- [o.h.e.j.e.i.JdbcEnvironmentInitiator    ] : HHH000342: Could not obtain connection to query metadata
+
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:319)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at org.postgresql.ds.common.BaseDataSource.getConnection(BaseDataSource.java:103)
+	at org.postgresql.ds.common.BaseDataSource.getConnection(BaseDataSource.java:87)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at API.architecture.kotlinAPI.KotlinApiApplicationKt.main(KotlinApiApplication.kt:15)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:535)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:241)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:109)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235)
+	... 47 common frames omitted
+
+2023-04-10 20:24:23.683-0400 [main] ERROR 2258 --- [j.LocalContainerEntityManagerFactoryBean] : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2023-04-10 20:24:23.685-0400 [main]  WARN 2258 --- [ConfigServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2023-04-10 20:24:23.686-0400 [main]  INFO 2258 --- [o.apache.catalina.core.StandardService  ] : Stopping service [Tomcat]
+2023-04-10 20:24:23.698-0400 [main]  INFO 2258 --- [ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-10 20:24:23.722-0400 [main] ERROR 2258 --- [o.s.boot.SpringApplication              ] : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at API.architecture.kotlinAPI.KotlinApiApplicationKt.main(KotlinApiApplication.kt:15)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:138)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 33 common frames omitted
+
+2023-04-10 20:25:52.370-0400 [main]  INFO 2376 --- [c.c.c.ConfigServicePropertySourceLocator] : Fetching config from server at : http://localhost:8888
+2023-04-10 20:25:53.446-0400 [main]  INFO 2376 --- [c.c.c.ConfigServicePropertySourceLocator] : Located environment: name=currency-converter, profiles=[default], label=null, version=c34437fc9faeb3ad14a13743df664e08df831eb6, state=null
+2023-04-10 20:25:53.448-0400 [main]  INFO 2376 --- [b.c.PropertySourceBootstrapConfiguration] : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/JuancaJcA/server-config.git/currency-converter.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/JuancaJcA/server-config.git/application.yml'}]
+2023-04-10 20:25:53.457-0400 [main]  INFO 2376 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : No active profile set, falling back to 1 default profile: "default"
+2023-04-10 20:25:54.371-0400 [main]  INFO 2376 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-10 20:25:54.614-0400 [main]  INFO 2376 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 227 ms. Found 1 JPA repository interfaces.
+2023-04-10 20:25:55.077-0400 [main]  INFO 2376 --- [o.s.cloud.context.scope.GenericScope    ] : BeanFactory id=b6a96b64-b90c-33b1-916d-9f9d04abdbc2
+2023-04-10 20:25:55.896-0400 [main]  INFO 2376 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 9009 (http)
+2023-04-10 20:25:55.911-0400 [main]  INFO 2376 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-10 20:25:55.911-0400 [main]  INFO 2376 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-10 20:25:56.085-0400 [main]  INFO 2376 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-10 20:25:56.088-0400 [main]  INFO 2376 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2612 ms
+2023-04-10 20:25:56.260-0400 [main] ERROR 2376 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/exchange/*] the HTTP methods [OPTIONS] are uncovered.
+2023-04-10 20:25:56.260-0400 [main] ERROR 2376 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-10 20:25:56.592-0400 [main]  INFO 2376 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-10 20:25:56.718-0400 [main]  INFO 2376 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-10 20:25:57.075-0400 [main]  INFO 2376 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-10 20:25:57.644-0400 [main]  INFO 2376 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-10 20:25:58.454-0400 [main]  INFO 2376 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-10 20:25:58.464-0400 [main]  INFO 2376 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 20:25:59.421-0400 [main]  WARN 2376 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-10 20:26:01.138-0400 [main]  INFO 2376 --- [DiscoveryClientOptionalArgsConfiguration] : Eureka HTTP Client uses RestTemplate.
+2023-04-10 20:26:01.566-0400 [main]  WARN 2376 --- [iguration$LoadBalancerCaffeineWarnLogger] : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-10 20:26:01.664-0400 [main]  INFO 2376 --- [o.s.c.n.eureka.InstanceInfoFactory      ] : Setting initial instance status as: STARTING
+2023-04-10 20:26:01.723-0400 [main]  INFO 2376 --- [com.netflix.discovery.DiscoveryClient   ] : Initializing Eureka in region us-east-1
+2023-04-10 20:26:01.730-0400 [main]  INFO 2376 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-10 20:26:01.760-0400 [main]  INFO 2376 --- [com.netflix.discovery.DiscoveryClient   ] : Disable delta property : false
+2023-04-10 20:26:01.760-0400 [main]  INFO 2376 --- [com.netflix.discovery.DiscoveryClient   ] : Single vip registry refresh property : null
+2023-04-10 20:26:01.760-0400 [main]  INFO 2376 --- [com.netflix.discovery.DiscoveryClient   ] : Force full registry fetch : false
+2023-04-10 20:26:01.760-0400 [main]  INFO 2376 --- [com.netflix.discovery.DiscoveryClient   ] : Application is null : false
+2023-04-10 20:26:01.760-0400 [main]  INFO 2376 --- [com.netflix.discovery.DiscoveryClient   ] : Registered Applications size is zero : true
+2023-04-10 20:26:01.760-0400 [main]  INFO 2376 --- [com.netflix.discovery.DiscoveryClient   ] : Application version is -1: true
+2023-04-10 20:26:01.761-0400 [main]  INFO 2376 --- [com.netflix.discovery.DiscoveryClient   ] : Getting all instance registry info from the eureka server
+2023-04-10 20:26:02.273-0400 [main]  INFO 2376 --- [com.netflix.discovery.DiscoveryClient   ] : The response status is 200
+2023-04-10 20:26:02.277-0400 [main]  INFO 2376 --- [com.netflix.discovery.DiscoveryClient   ] : Starting heartbeat executor: renew interval is: 30
+2023-04-10 20:26:02.280-0400 [main]  INFO 2376 --- [c.n.discovery.InstanceInfoReplicator    ] : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-04-10 20:26:02.289-0400 [main]  INFO 2376 --- [com.netflix.discovery.DiscoveryClient   ] : Discovery Client initialized at timestamp 1681172762287 with initial instances count: 1
+2023-04-10 20:26:02.296-0400 [main]  INFO 2376 --- [o.s.c.n.e.s.EurekaServiceRegistry       ] : Registering application CURRENCY-CONVERTER with eureka with status UP
+2023-04-10 20:26:02.297-0400 [main]  INFO 2376 --- [com.netflix.discovery.DiscoveryClient   ] : Saw local status change event StatusChangeEvent [timestamp=1681172762297, current=UP, previous=STARTING]
+2023-04-10 20:26:02.298-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 2376 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:9009: registering service...
+2023-04-10 20:26:02.320-0400 [main]  INFO 2376 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 9009 (http) with context path ''
+2023-04-10 20:26:02.321-0400 [main]  INFO 2376 --- [.s.c.n.e.s.EurekaAutoServiceRegistration] : Updating port to 9009
+2023-04-10 20:26:02.349-0400 [main]  INFO 2376 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Started KotlinApiApplicationKt in 11.638 seconds (JVM running for 13.718)
+2023-04-10 20:26:02.368-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 2376 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:9009 - registration status: 204
+2023-04-10 20:27:49.490-0400 [SpringApplicationShutdownHook]  INFO 2376 --- [o.s.c.n.e.s.EurekaServiceRegistry       ] : Unregistering application CURRENCY-CONVERTER with eureka with status DOWN
+2023-04-10 20:27:49.491-0400 [SpringApplicationShutdownHook]  INFO 2376 --- [com.netflix.discovery.DiscoveryClient   ] : Saw local status change event StatusChangeEvent [timestamp=1681172869491, current=DOWN, previous=UP]
+2023-04-10 20:27:49.491-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 2376 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:9009: registering service...
+2023-04-10 20:27:49.505-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 2376 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:9009 - registration status: 204
+2023-04-10 20:27:49.541-0400 [SpringApplicationShutdownHook]  INFO 2376 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 20:27:49.545-0400 [SpringApplicationShutdownHook]  INFO 2376 --- [com.netflix.discovery.DiscoveryClient   ] : Shutting down DiscoveryClient ...
+2023-04-10 20:27:52.547-0400 [SpringApplicationShutdownHook]  INFO 2376 --- [com.netflix.discovery.DiscoveryClient   ] : Unregistering ...
+2023-04-10 20:27:52.578-0400 [SpringApplicationShutdownHook]  INFO 2376 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:9009 - deregister  status: 200
+2023-04-10 20:27:52.587-0400 [SpringApplicationShutdownHook]  INFO 2376 --- [com.netflix.discovery.DiscoveryClient   ] : Completed shut down of DiscoveryClient
+2023-04-10 20:28:23.581-0400 [main]  INFO 2562 --- [c.c.c.ConfigServicePropertySourceLocator] : Fetching config from server at : http://localhost:8888
+2023-04-10 20:28:25.189-0400 [main]  INFO 2562 --- [c.c.c.ConfigServicePropertySourceLocator] : Located environment: name=currency-converter, profiles=[test], label=null, version=c34437fc9faeb3ad14a13743df664e08df831eb6, state=null
+2023-04-10 20:28:25.190-0400 [main]  INFO 2562 --- [b.c.PropertySourceBootstrapConfiguration] : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/JuancaJcA/server-config.git/currency-converter-test.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/JuancaJcA/server-config.git/currency-converter.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/JuancaJcA/server-config.git/application.yml'}]
+2023-04-10 20:28:25.197-0400 [main]  INFO 2562 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : The following 1 profile is active: "test"
+2023-04-10 20:28:26.900-0400 [main]  INFO 2562 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-10 20:28:27.395-0400 [main]  INFO 2562 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 460 ms. Found 1 JPA repository interfaces.
+2023-04-10 20:28:27.897-0400 [main]  INFO 2562 --- [o.s.cloud.context.scope.GenericScope    ] : BeanFactory id=b6a96b64-b90c-33b1-916d-9f9d04abdbc2
+2023-04-10 20:28:28.642-0400 [main]  INFO 2562 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 6006 (http)
+2023-04-10 20:28:28.652-0400 [main]  INFO 2562 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-10 20:28:28.653-0400 [main]  INFO 2562 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-10 20:28:28.757-0400 [main]  INFO 2562 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-10 20:28:28.758-0400 [main]  INFO 2562 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3535 ms
+2023-04-10 20:28:28.848-0400 [main] ERROR 2562 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/exchange/*] the HTTP methods [OPTIONS] are uncovered.
+2023-04-10 20:28:28.849-0400 [main] ERROR 2562 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-10 20:28:29.048-0400 [main]  INFO 2562 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-10 20:28:29.147-0400 [main]  INFO 2562 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-10 20:28:29.407-0400 [main]  INFO 2562 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-10 20:28:29.760-0400 [main]  INFO 2562 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-10 20:28:30.214-0400 [main]  INFO 2562 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-10 20:28:30.221-0400 [main]  INFO 2562 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 20:28:30.671-0400 [main]  WARN 2562 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-10 20:28:31.625-0400 [main]  INFO 2562 --- [DiscoveryClientOptionalArgsConfiguration] : Eureka HTTP Client uses RestTemplate.
+2023-04-10 20:28:31.877-0400 [main]  WARN 2562 --- [iguration$LoadBalancerCaffeineWarnLogger] : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-10 20:28:31.935-0400 [main]  INFO 2562 --- [o.s.c.n.eureka.InstanceInfoFactory      ] : Setting initial instance status as: STARTING
+2023-04-10 20:28:31.984-0400 [main]  INFO 2562 --- [com.netflix.discovery.DiscoveryClient   ] : Initializing Eureka in region us-east-1
+2023-04-10 20:28:31.989-0400 [main]  INFO 2562 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-10 20:28:32.013-0400 [main]  INFO 2562 --- [com.netflix.discovery.DiscoveryClient   ] : Disable delta property : false
+2023-04-10 20:28:32.013-0400 [main]  INFO 2562 --- [com.netflix.discovery.DiscoveryClient   ] : Single vip registry refresh property : null
+2023-04-10 20:28:32.013-0400 [main]  INFO 2562 --- [com.netflix.discovery.DiscoveryClient   ] : Force full registry fetch : false
+2023-04-10 20:28:32.013-0400 [main]  INFO 2562 --- [com.netflix.discovery.DiscoveryClient   ] : Application is null : false
+2023-04-10 20:28:32.014-0400 [main]  INFO 2562 --- [com.netflix.discovery.DiscoveryClient   ] : Registered Applications size is zero : true
+2023-04-10 20:28:32.014-0400 [main]  INFO 2562 --- [com.netflix.discovery.DiscoveryClient   ] : Application version is -1: true
+2023-04-10 20:28:32.014-0400 [main]  INFO 2562 --- [com.netflix.discovery.DiscoveryClient   ] : Getting all instance registry info from the eureka server
+2023-04-10 20:28:32.432-0400 [main]  INFO 2562 --- [com.netflix.discovery.DiscoveryClient   ] : The response status is 200
+2023-04-10 20:28:32.435-0400 [main]  INFO 2562 --- [com.netflix.discovery.DiscoveryClient   ] : Starting heartbeat executor: renew interval is: 30
+2023-04-10 20:28:32.437-0400 [main]  INFO 2562 --- [c.n.discovery.InstanceInfoReplicator    ] : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-04-10 20:28:32.442-0400 [main]  INFO 2562 --- [com.netflix.discovery.DiscoveryClient   ] : Discovery Client initialized at timestamp 1681172912441 with initial instances count: 1
+2023-04-10 20:28:32.446-0400 [main]  INFO 2562 --- [o.s.c.n.e.s.EurekaServiceRegistry       ] : Registering application CURRENCY-CONVERTER with eureka with status UP
+2023-04-10 20:28:32.447-0400 [main]  INFO 2562 --- [com.netflix.discovery.DiscoveryClient   ] : Saw local status change event StatusChangeEvent [timestamp=1681172912447, current=UP, previous=STARTING]
+2023-04-10 20:28:32.448-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 2562 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:6006: registering service...
+2023-04-10 20:28:32.466-0400 [main]  INFO 2562 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 6006 (http) with context path ''
+2023-04-10 20:28:32.466-0400 [main]  INFO 2562 --- [.s.c.n.e.s.EurekaAutoServiceRegistration] : Updating port to 6006
+2023-04-10 20:28:32.481-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 2562 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:6006 - registration status: 204
+2023-04-10 20:28:32.487-0400 [main]  INFO 2562 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Started KotlinApiApplicationKt in 10.742 seconds (JVM running for 12.964)
+2023-04-10 20:33:32.016-0400 [AsyncResolver-bootstrap-executor-0]  INFO 2562 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-10 20:37:19.418-0400 [SpringApplicationShutdownHook]  INFO 2562 --- [o.s.c.n.e.s.EurekaServiceRegistry       ] : Unregistering application CURRENCY-CONVERTER with eureka with status DOWN
+2023-04-10 20:37:19.418-0400 [SpringApplicationShutdownHook]  INFO 2562 --- [com.netflix.discovery.DiscoveryClient   ] : Saw local status change event StatusChangeEvent [timestamp=1681173439418, current=DOWN, previous=UP]
+2023-04-10 20:37:19.419-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 2562 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:6006: registering service...
+2023-04-10 20:37:19.426-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 2562 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:6006 - registration status: 204
+2023-04-10 20:37:19.464-0400 [SpringApplicationShutdownHook]  INFO 2562 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 20:37:19.468-0400 [SpringApplicationShutdownHook]  INFO 2562 --- [com.netflix.discovery.DiscoveryClient   ] : Shutting down DiscoveryClient ...
+2023-04-10 20:37:22.471-0400 [SpringApplicationShutdownHook]  INFO 2562 --- [com.netflix.discovery.DiscoveryClient   ] : Unregistering ...
+2023-04-10 20:37:22.477-0400 [SpringApplicationShutdownHook]  INFO 2562 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:6006 - deregister  status: 200
+2023-04-10 20:37:22.483-0400 [SpringApplicationShutdownHook]  INFO 2562 --- [com.netflix.discovery.DiscoveryClient   ] : Completed shut down of DiscoveryClient
+2023-04-10 20:44:08.584-0400 [main]  INFO 3214 --- [c.c.c.ConfigServicePropertySourceLocator] : Fetching config from server at : http://localhost:8888
+2023-04-10 20:44:10.605-0400 [main]  INFO 3214 --- [c.c.c.ConfigServicePropertySourceLocator] : Located environment: name=currency-converter, profiles=[test], label=null, version=c34437fc9faeb3ad14a13743df664e08df831eb6, state=null
+2023-04-10 20:44:10.607-0400 [main]  INFO 3214 --- [b.c.PropertySourceBootstrapConfiguration] : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:JuancaJcA/server-config.git/currency-converter-test.yml'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:JuancaJcA/server-config.git/currency-converter.yml'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:JuancaJcA/server-config.git/application.yml'}]
+2023-04-10 20:44:10.615-0400 [main]  INFO 3214 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : The following 1 profile is active: "test"
+2023-04-10 20:44:11.667-0400 [main]  INFO 3214 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-10 20:44:11.852-0400 [main]  INFO 3214 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 162 ms. Found 1 JPA repository interfaces.
+2023-04-10 20:44:12.217-0400 [main]  INFO 3214 --- [o.s.cloud.context.scope.GenericScope    ] : BeanFactory id=d591c36a-946f-32d1-871b-03793a6e8a69
+2023-04-10 20:44:12.886-0400 [main]  INFO 3214 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 6006 (http)
+2023-04-10 20:44:12.893-0400 [main]  INFO 3214 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-10 20:44:12.893-0400 [main]  INFO 3214 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-10 20:44:13.002-0400 [main]  INFO 3214 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-10 20:44:13.002-0400 [main]  INFO 3214 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2370 ms
+2023-04-10 20:44:13.357-0400 [main] ERROR 3214 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/exchange/*] the HTTP methods [OPTIONS] are uncovered.
+2023-04-10 20:44:13.358-0400 [main] ERROR 3214 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-10 20:44:13.479-0400 [main]  INFO 3214 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-10 20:44:13.585-0400 [main]  INFO 3214 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-10 20:44:13.844-0400 [main]  INFO 3214 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-10 20:44:14.245-0400 [main]  INFO 3214 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-10 20:44:14.722-0400 [main]  INFO 3214 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-10 20:44:14.738-0400 [main]  INFO 3214 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 20:44:15.266-0400 [main]  WARN 3214 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-10 20:44:16.679-0400 [main]  INFO 3214 --- [DiscoveryClientOptionalArgsConfiguration] : Eureka HTTP Client uses RestTemplate.
+2023-04-10 20:44:16.914-0400 [main]  WARN 3214 --- [iguration$LoadBalancerCaffeineWarnLogger] : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-10 20:44:16.924-0400 [main]  INFO 3214 --- [o.s.b.a.e.web.EndpointLinksResolver     ] : Exposing 16 endpoint(s) beneath base path '/actuator'
+2023-04-10 20:44:17.012-0400 [main]  INFO 3214 --- [o.s.c.n.eureka.InstanceInfoFactory      ] : Setting initial instance status as: STARTING
+2023-04-10 20:44:17.066-0400 [main]  INFO 3214 --- [com.netflix.discovery.DiscoveryClient   ] : Initializing Eureka in region us-east-1
+2023-04-10 20:44:17.072-0400 [main]  INFO 3214 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-10 20:44:17.100-0400 [main]  INFO 3214 --- [com.netflix.discovery.DiscoveryClient   ] : Disable delta property : false
+2023-04-10 20:44:17.100-0400 [main]  INFO 3214 --- [com.netflix.discovery.DiscoveryClient   ] : Single vip registry refresh property : null
+2023-04-10 20:44:17.100-0400 [main]  INFO 3214 --- [com.netflix.discovery.DiscoveryClient   ] : Force full registry fetch : false
+2023-04-10 20:44:17.100-0400 [main]  INFO 3214 --- [com.netflix.discovery.DiscoveryClient   ] : Application is null : false
+2023-04-10 20:44:17.100-0400 [main]  INFO 3214 --- [com.netflix.discovery.DiscoveryClient   ] : Registered Applications size is zero : true
+2023-04-10 20:44:17.100-0400 [main]  INFO 3214 --- [com.netflix.discovery.DiscoveryClient   ] : Application version is -1: true
+2023-04-10 20:44:17.100-0400 [main]  INFO 3214 --- [com.netflix.discovery.DiscoveryClient   ] : Getting all instance registry info from the eureka server
+2023-04-10 20:44:17.453-0400 [main]  INFO 3214 --- [com.netflix.discovery.DiscoveryClient   ] : The response status is 200
+2023-04-10 20:44:17.457-0400 [main]  INFO 3214 --- [com.netflix.discovery.DiscoveryClient   ] : Starting heartbeat executor: renew interval is: 30
+2023-04-10 20:44:17.459-0400 [main]  INFO 3214 --- [c.n.discovery.InstanceInfoReplicator    ] : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-04-10 20:44:17.464-0400 [main]  INFO 3214 --- [com.netflix.discovery.DiscoveryClient   ] : Discovery Client initialized at timestamp 1681173857463 with initial instances count: 1
+2023-04-10 20:44:17.468-0400 [main]  INFO 3214 --- [o.s.c.n.e.s.EurekaServiceRegistry       ] : Registering application CURRENCY-CONVERTER with eureka with status UP
+2023-04-10 20:44:17.469-0400 [main]  INFO 3214 --- [com.netflix.discovery.DiscoveryClient   ] : Saw local status change event StatusChangeEvent [timestamp=1681173857469, current=UP, previous=STARTING]
+2023-04-10 20:44:17.470-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 3214 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:6006: registering service...
+2023-04-10 20:44:17.487-0400 [main]  INFO 3214 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 6006 (http) with context path ''
+2023-04-10 20:44:17.488-0400 [main]  INFO 3214 --- [.s.c.n.e.s.EurekaAutoServiceRegistration] : Updating port to 6006
+2023-04-10 20:44:17.506-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 3214 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:6006 - registration status: 204
+2023-04-10 20:44:17.510-0400 [main]  INFO 3214 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Started KotlinApiApplicationKt in 10.524 seconds (JVM running for 12.251)
+2023-04-10 20:44:17.565-0400 [RMI TCP Connection(3)-127.0.0.1]  INFO 3214 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-10 20:44:17.566-0400 [RMI TCP Connection(3)-127.0.0.1]  INFO 3214 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-04-10 20:44:17.569-0400 [RMI TCP Connection(3)-127.0.0.1]  INFO 3214 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 3 ms
+2023-04-10 20:48:40.991-0400 [SpringApplicationShutdownHook]  INFO 3214 --- [o.s.c.n.e.s.EurekaServiceRegistry       ] : Unregistering application CURRENCY-CONVERTER with eureka with status DOWN
+2023-04-10 20:48:40.996-0400 [SpringApplicationShutdownHook]  INFO 3214 --- [com.netflix.discovery.DiscoveryClient   ] : Saw local status change event StatusChangeEvent [timestamp=1681174120996, current=DOWN, previous=UP]
+2023-04-10 20:48:40.997-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 3214 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:6006: registering service...
+2023-04-10 20:48:41.002-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 3214 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:6006 - registration status: 204
+2023-04-10 20:48:41.026-0400 [SpringApplicationShutdownHook]  INFO 3214 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 20:48:41.030-0400 [SpringApplicationShutdownHook]  INFO 3214 --- [com.netflix.discovery.DiscoveryClient   ] : Shutting down DiscoveryClient ...
+2023-04-10 20:48:44.032-0400 [SpringApplicationShutdownHook]  INFO 3214 --- [com.netflix.discovery.DiscoveryClient   ] : Unregistering ...
+2023-04-10 20:48:44.043-0400 [SpringApplicationShutdownHook]  INFO 3214 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:6006 - deregister  status: 200
+2023-04-10 20:48:44.051-0400 [SpringApplicationShutdownHook]  INFO 3214 --- [com.netflix.discovery.DiscoveryClient   ] : Completed shut down of DiscoveryClient
+2023-04-10 20:49:10.222-0400 [main]  INFO 3592 --- [c.c.c.ConfigServicePropertySourceLocator] : Fetching config from server at : http://localhost:8888
+2023-04-10 20:49:14.365-0400 [main]  WARN 3592 --- [c.c.c.ConfigServicePropertySourceLocator] : Could not locate PropertySource: None of labels [] found
+2023-04-10 20:49:14.374-0400 [main]  INFO 3592 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : The following 1 profile is active: "test"
+2023-04-10 20:49:15.461-0400 [main]  INFO 3592 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-10 20:49:15.649-0400 [main]  INFO 3592 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 164 ms. Found 1 JPA repository interfaces.
+2023-04-10 20:49:16.026-0400 [main]  INFO 3592 --- [o.s.cloud.context.scope.GenericScope    ] : BeanFactory id=d591c36a-946f-32d1-871b-03793a6e8a69
+2023-04-10 20:49:16.715-0400 [main]  INFO 3592 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-04-10 20:49:16.726-0400 [main]  INFO 3592 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-10 20:49:16.726-0400 [main]  INFO 3592 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-10 20:49:16.819-0400 [main]  INFO 3592 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-10 20:49:16.820-0400 [main]  INFO 3592 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2431 ms
+2023-04-10 20:49:17.264-0400 [main] ERROR 3592 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/exchange/*] the HTTP methods [OPTIONS] are uncovered.
+2023-04-10 20:49:17.265-0400 [main] ERROR 3592 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-10 20:49:17.450-0400 [main]  INFO 3592 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-10 20:49:17.585-0400 [main]  INFO 3592 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-10 20:49:17.931-0400 [main]  INFO 3592 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-10 20:49:18.294-0400 [main]  INFO 3592 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-10 20:49:18.799-0400 [main]  INFO 3592 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-10 20:49:18.807-0400 [main]  INFO 3592 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 20:49:19.425-0400 [main]  WARN 3592 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-10 20:49:21.053-0400 [main]  INFO 3592 --- [DiscoveryClientOptionalArgsConfiguration] : Eureka HTTP Client uses RestTemplate.
+2023-04-10 20:49:21.292-0400 [main]  WARN 3592 --- [iguration$LoadBalancerCaffeineWarnLogger] : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-10 20:49:21.302-0400 [main]  INFO 3592 --- [o.s.b.a.e.web.EndpointLinksResolver     ] : Exposing 16 endpoint(s) beneath base path '/actuator'
+2023-04-10 20:49:21.387-0400 [main]  INFO 3592 --- [o.s.c.n.eureka.InstanceInfoFactory      ] : Setting initial instance status as: STARTING
+2023-04-10 20:49:21.454-0400 [main]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Initializing Eureka in region us-east-1
+2023-04-10 20:49:21.462-0400 [main]  INFO 3592 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-10 20:49:21.498-0400 [main]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Disable delta property : false
+2023-04-10 20:49:21.499-0400 [main]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Single vip registry refresh property : null
+2023-04-10 20:49:21.499-0400 [main]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Force full registry fetch : false
+2023-04-10 20:49:21.499-0400 [main]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Application is null : false
+2023-04-10 20:49:21.499-0400 [main]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Registered Applications size is zero : true
+2023-04-10 20:49:21.499-0400 [main]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Application version is -1: true
+2023-04-10 20:49:21.499-0400 [main]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Getting all instance registry info from the eureka server
+2023-04-10 20:49:21.952-0400 [main]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : The response status is 200
+2023-04-10 20:49:21.954-0400 [main]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Starting heartbeat executor: renew interval is: 30
+2023-04-10 20:49:21.958-0400 [main]  INFO 3592 --- [c.n.discovery.InstanceInfoReplicator    ] : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-04-10 20:49:21.965-0400 [main]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Discovery Client initialized at timestamp 1681174161963 with initial instances count: 0
+2023-04-10 20:49:21.972-0400 [main]  INFO 3592 --- [o.s.c.n.e.s.EurekaServiceRegistry       ] : Registering application CURRENCY-CONVERTER with eureka with status UP
+2023-04-10 20:49:21.973-0400 [main]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Saw local status change event StatusChangeEvent [timestamp=1681174161973, current=UP, previous=STARTING]
+2023-04-10 20:49:21.975-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:8008: registering service...
+2023-04-10 20:49:22.024-0400 [main]  INFO 3592 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-04-10 20:49:22.025-0400 [main]  INFO 3592 --- [.s.c.n.e.s.EurekaAutoServiceRegistration] : Updating port to 8008
+2023-04-10 20:49:22.053-0400 [main]  INFO 3592 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Started KotlinApiApplicationKt in 13.75 seconds (JVM running for 15.628)
+2023-04-10 20:49:22.055-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:8008 - registration status: 204
+2023-04-10 20:49:22.522-0400 [RMI TCP Connection(7)-127.0.0.1]  INFO 3592 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-10 20:49:22.522-0400 [RMI TCP Connection(7)-127.0.0.1]  INFO 3592 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-04-10 20:49:22.525-0400 [RMI TCP Connection(7)-127.0.0.1]  INFO 3592 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 3 ms
+2023-04-10 20:49:51.955-0400 [DiscoveryClient-CacheRefreshExecutor-0]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Disable delta property : false
+2023-04-10 20:49:51.955-0400 [DiscoveryClient-CacheRefreshExecutor-0]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Single vip registry refresh property : null
+2023-04-10 20:49:51.955-0400 [DiscoveryClient-CacheRefreshExecutor-0]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Force full registry fetch : false
+2023-04-10 20:49:51.955-0400 [DiscoveryClient-CacheRefreshExecutor-0]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Application is null : false
+2023-04-10 20:49:51.955-0400 [DiscoveryClient-CacheRefreshExecutor-0]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Registered Applications size is zero : true
+2023-04-10 20:49:51.955-0400 [DiscoveryClient-CacheRefreshExecutor-0]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Application version is -1: false
+2023-04-10 20:49:51.956-0400 [DiscoveryClient-CacheRefreshExecutor-0]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Getting all instance registry info from the eureka server
+2023-04-10 20:49:51.976-0400 [DiscoveryClient-CacheRefreshExecutor-0]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : The response status is 200
+2023-04-10 20:50:42.810-0400 [SpringApplicationShutdownHook]  INFO 3592 --- [o.s.c.n.e.s.EurekaServiceRegistry       ] : Unregistering application CURRENCY-CONVERTER with eureka with status DOWN
+2023-04-10 20:50:42.811-0400 [SpringApplicationShutdownHook]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Saw local status change event StatusChangeEvent [timestamp=1681174242811, current=DOWN, previous=UP]
+2023-04-10 20:50:42.811-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:8008: registering service...
+2023-04-10 20:50:42.815-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:8008 - registration status: 204
+2023-04-10 20:50:42.840-0400 [SpringApplicationShutdownHook]  INFO 3592 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 20:50:42.842-0400 [SpringApplicationShutdownHook]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Shutting down DiscoveryClient ...
+2023-04-10 20:50:45.844-0400 [SpringApplicationShutdownHook]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Unregistering ...
+2023-04-10 20:50:45.854-0400 [SpringApplicationShutdownHook]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:8008 - deregister  status: 200
+2023-04-10 20:50:45.861-0400 [SpringApplicationShutdownHook]  INFO 3592 --- [com.netflix.discovery.DiscoveryClient   ] : Completed shut down of DiscoveryClient
+2023-04-10 20:50:53.499-0400 [main]  INFO 3971 --- [c.c.c.ConfigServicePropertySourceLocator] : Fetching config from server at : http://localhost:8888
+2023-04-10 20:51:00.172-0400 [main]  WARN 3971 --- [c.c.c.ConfigServicePropertySourceLocator] : Could not locate PropertySource: None of labels [] found
+2023-04-10 20:51:00.174-0400 [main]  INFO 3971 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : The following 1 profile is active: "test"
+2023-04-10 20:51:01.178-0400 [main]  INFO 3971 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-10 20:51:01.349-0400 [main]  INFO 3971 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 158 ms. Found 1 JPA repository interfaces.
+2023-04-10 20:51:01.645-0400 [main]  INFO 3971 --- [o.s.cloud.context.scope.GenericScope    ] : BeanFactory id=d591c36a-946f-32d1-871b-03793a6e8a69
+2023-04-10 20:51:02.235-0400 [main]  INFO 3971 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-04-10 20:51:02.246-0400 [main]  INFO 3971 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-10 20:51:02.247-0400 [main]  INFO 3971 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-10 20:51:02.340-0400 [main]  INFO 3971 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-10 20:51:02.340-0400 [main]  INFO 3971 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2152 ms
+2023-04-10 20:51:02.707-0400 [main] ERROR 3971 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/exchange/*] the HTTP methods [OPTIONS] are uncovered.
+2023-04-10 20:51:02.707-0400 [main] ERROR 3971 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-10 20:51:02.819-0400 [main]  INFO 3971 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-10 20:51:02.922-0400 [main]  INFO 3971 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-10 20:51:03.179-0400 [main]  INFO 3971 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-10 20:51:03.496-0400 [main]  INFO 3971 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-10 20:51:03.942-0400 [main]  INFO 3971 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-10 20:51:03.950-0400 [main]  INFO 3971 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 20:51:04.469-0400 [main]  WARN 3971 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-10 20:51:06.037-0400 [main]  INFO 3971 --- [DiscoveryClientOptionalArgsConfiguration] : Eureka HTTP Client uses RestTemplate.
+2023-04-10 20:51:06.321-0400 [main]  WARN 3971 --- [iguration$LoadBalancerCaffeineWarnLogger] : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-10 20:51:06.337-0400 [main]  INFO 3971 --- [o.s.b.a.e.web.EndpointLinksResolver     ] : Exposing 16 endpoint(s) beneath base path '/actuator'
+2023-04-10 20:51:06.450-0400 [main]  INFO 3971 --- [o.s.c.n.eureka.InstanceInfoFactory      ] : Setting initial instance status as: STARTING
+2023-04-10 20:51:06.512-0400 [main]  INFO 3971 --- [com.netflix.discovery.DiscoveryClient   ] : Initializing Eureka in region us-east-1
+2023-04-10 20:51:06.521-0400 [main]  INFO 3971 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-10 20:51:06.558-0400 [main]  INFO 3971 --- [com.netflix.discovery.DiscoveryClient   ] : Disable delta property : false
+2023-04-10 20:51:06.558-0400 [main]  INFO 3971 --- [com.netflix.discovery.DiscoveryClient   ] : Single vip registry refresh property : null
+2023-04-10 20:51:06.558-0400 [main]  INFO 3971 --- [com.netflix.discovery.DiscoveryClient   ] : Force full registry fetch : false
+2023-04-10 20:51:06.559-0400 [main]  INFO 3971 --- [com.netflix.discovery.DiscoveryClient   ] : Application is null : false
+2023-04-10 20:51:06.559-0400 [main]  INFO 3971 --- [com.netflix.discovery.DiscoveryClient   ] : Registered Applications size is zero : true
+2023-04-10 20:51:06.559-0400 [main]  INFO 3971 --- [com.netflix.discovery.DiscoveryClient   ] : Application version is -1: true
+2023-04-10 20:51:06.559-0400 [main]  INFO 3971 --- [com.netflix.discovery.DiscoveryClient   ] : Getting all instance registry info from the eureka server
+2023-04-10 20:51:06.926-0400 [main]  INFO 3971 --- [com.netflix.discovery.DiscoveryClient   ] : The response status is 200
+2023-04-10 20:51:06.929-0400 [main]  INFO 3971 --- [com.netflix.discovery.DiscoveryClient   ] : Starting heartbeat executor: renew interval is: 30
+2023-04-10 20:51:06.933-0400 [main]  INFO 3971 --- [c.n.discovery.InstanceInfoReplicator    ] : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-04-10 20:51:06.944-0400 [main]  INFO 3971 --- [com.netflix.discovery.DiscoveryClient   ] : Discovery Client initialized at timestamp 1681174266942 with initial instances count: 1
+2023-04-10 20:51:06.952-0400 [main]  INFO 3971 --- [o.s.c.n.e.s.EurekaServiceRegistry       ] : Registering application CURRENCY-CONVERTER with eureka with status UP
+2023-04-10 20:51:06.953-0400 [main]  INFO 3971 --- [com.netflix.discovery.DiscoveryClient   ] : Saw local status change event StatusChangeEvent [timestamp=1681174266953, current=UP, previous=STARTING]
+2023-04-10 20:51:06.957-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 3971 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:8008: registering service...
+2023-04-10 20:51:07.008-0400 [main]  INFO 3971 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 8008 (http) with context path ''
+2023-04-10 20:51:07.009-0400 [main]  INFO 3971 --- [.s.c.n.e.s.EurekaAutoServiceRegistration] : Updating port to 8008
+2023-04-10 20:51:07.020-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 3971 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:8008 - registration status: 204
+2023-04-10 20:51:07.035-0400 [main]  INFO 3971 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Started KotlinApiApplicationKt in 15.816 seconds (JVM running for 17.291)
+2023-04-10 20:51:07.104-0400 [RMI TCP Connection(5)-127.0.0.1]  INFO 3971 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-10 20:51:07.104-0400 [RMI TCP Connection(5)-127.0.0.1]  INFO 3971 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-04-10 20:51:07.107-0400 [RMI TCP Connection(5)-127.0.0.1]  INFO 3971 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 3 ms
+2023-04-10 20:51:56.569-0400 [SpringApplicationShutdownHook]  INFO 3971 --- [o.s.c.n.e.s.EurekaServiceRegistry       ] : Unregistering application CURRENCY-CONVERTER with eureka with status DOWN
+2023-04-10 20:51:56.570-0400 [SpringApplicationShutdownHook]  INFO 3971 --- [com.netflix.discovery.DiscoveryClient   ] : Saw local status change event StatusChangeEvent [timestamp=1681174316570, current=DOWN, previous=UP]
+2023-04-10 20:51:56.570-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 3971 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:8008: registering service...
+2023-04-10 20:51:56.577-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 3971 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:8008 - registration status: 204
+2023-04-10 20:51:56.627-0400 [SpringApplicationShutdownHook]  INFO 3971 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 20:51:56.633-0400 [SpringApplicationShutdownHook]  INFO 3971 --- [com.netflix.discovery.DiscoveryClient   ] : Shutting down DiscoveryClient ...
+2023-04-10 20:51:59.635-0400 [SpringApplicationShutdownHook]  INFO 3971 --- [com.netflix.discovery.DiscoveryClient   ] : Unregistering ...
+2023-04-10 20:51:59.639-0400 [SpringApplicationShutdownHook]  INFO 3971 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:8008 - deregister  status: 200
+2023-04-10 20:51:59.643-0400 [SpringApplicationShutdownHook]  INFO 3971 --- [com.netflix.discovery.DiscoveryClient   ] : Completed shut down of DiscoveryClient
+2023-04-10 20:52:08.521-0400 [main]  INFO 4182 --- [c.c.c.ConfigServicePropertySourceLocator] : Fetching config from server at : http://localhost:8888
+2023-04-10 20:52:10.506-0400 [main]  INFO 4182 --- [c.c.c.ConfigServicePropertySourceLocator] : Located environment: name=currency-converter, profiles=[test], label=null, version=05cf23dec48ec1c602a25104b73c991ab692a803, state=null
+2023-04-10 20:52:10.507-0400 [main]  INFO 4182 --- [b.c.PropertySourceBootstrapConfiguration] : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:JuancaJcA/server-config.git/currency-converter-test.yml'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:JuancaJcA/server-config.git/currency-converter.yml'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:JuancaJcA/server-config.git/application.yml'}]
+2023-04-10 20:52:10.513-0400 [main]  INFO 4182 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : The following 1 profile is active: "test"
+2023-04-10 20:52:11.290-0400 [main]  INFO 4182 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-10 20:52:11.409-0400 [main]  INFO 4182 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 113 ms. Found 1 JPA repository interfaces.
+2023-04-10 20:52:11.724-0400 [main]  INFO 4182 --- [o.s.cloud.context.scope.GenericScope    ] : BeanFactory id=d591c36a-946f-32d1-871b-03793a6e8a69
+2023-04-10 20:52:12.196-0400 [main]  INFO 4182 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 5005 (http)
+2023-04-10 20:52:12.203-0400 [main]  INFO 4182 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-10 20:52:12.203-0400 [main]  INFO 4182 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-10 20:52:12.275-0400 [main]  INFO 4182 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-10 20:52:12.275-0400 [main]  INFO 4182 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1743 ms
+2023-04-10 20:52:12.605-0400 [main] ERROR 4182 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/exchange/*] the HTTP methods [OPTIONS] are uncovered.
+2023-04-10 20:52:12.606-0400 [main] ERROR 4182 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-10 20:52:12.688-0400 [main]  INFO 4182 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-10 20:52:12.723-0400 [main]  INFO 4182 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-10 20:52:12.864-0400 [main]  INFO 4182 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-10 20:52:13.070-0400 [main]  INFO 4182 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-10 20:52:13.402-0400 [main]  INFO 4182 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-10 20:52:13.409-0400 [main]  INFO 4182 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 20:52:13.870-0400 [main]  WARN 4182 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-10 20:52:15.119-0400 [main]  INFO 4182 --- [DiscoveryClientOptionalArgsConfiguration] : Eureka HTTP Client uses RestTemplate.
+2023-04-10 20:52:15.277-0400 [main]  WARN 4182 --- [iguration$LoadBalancerCaffeineWarnLogger] : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-10 20:52:15.286-0400 [main]  INFO 4182 --- [o.s.b.a.e.web.EndpointLinksResolver     ] : Exposing 16 endpoint(s) beneath base path '/actuator'
+2023-04-10 20:52:15.381-0400 [main]  INFO 4182 --- [o.s.c.n.eureka.InstanceInfoFactory      ] : Setting initial instance status as: STARTING
+2023-04-10 20:52:15.415-0400 [main]  INFO 4182 --- [com.netflix.discovery.DiscoveryClient   ] : Initializing Eureka in region us-east-1
+2023-04-10 20:52:15.420-0400 [main]  INFO 4182 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-10 20:52:15.442-0400 [main]  INFO 4182 --- [com.netflix.discovery.DiscoveryClient   ] : Disable delta property : false
+2023-04-10 20:52:15.442-0400 [main]  INFO 4182 --- [com.netflix.discovery.DiscoveryClient   ] : Single vip registry refresh property : null
+2023-04-10 20:52:15.442-0400 [main]  INFO 4182 --- [com.netflix.discovery.DiscoveryClient   ] : Force full registry fetch : false
+2023-04-10 20:52:15.442-0400 [main]  INFO 4182 --- [com.netflix.discovery.DiscoveryClient   ] : Application is null : false
+2023-04-10 20:52:15.442-0400 [main]  INFO 4182 --- [com.netflix.discovery.DiscoveryClient   ] : Registered Applications size is zero : true
+2023-04-10 20:52:15.442-0400 [main]  INFO 4182 --- [com.netflix.discovery.DiscoveryClient   ] : Application version is -1: true
+2023-04-10 20:52:15.442-0400 [main]  INFO 4182 --- [com.netflix.discovery.DiscoveryClient   ] : Getting all instance registry info from the eureka server
+2023-04-10 20:52:15.694-0400 [main]  INFO 4182 --- [com.netflix.discovery.DiscoveryClient   ] : The response status is 200
+2023-04-10 20:52:15.697-0400 [main]  INFO 4182 --- [com.netflix.discovery.DiscoveryClient   ] : Starting heartbeat executor: renew interval is: 30
+2023-04-10 20:52:15.700-0400 [main]  INFO 4182 --- [c.n.discovery.InstanceInfoReplicator    ] : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-04-10 20:52:15.705-0400 [main]  INFO 4182 --- [com.netflix.discovery.DiscoveryClient   ] : Discovery Client initialized at timestamp 1681174335704 with initial instances count: 1
+2023-04-10 20:52:15.709-0400 [main]  INFO 4182 --- [o.s.c.n.e.s.EurekaServiceRegistry       ] : Registering application CURRENCY-CONVERTER with eureka with status UP
+2023-04-10 20:52:15.709-0400 [main]  INFO 4182 --- [com.netflix.discovery.DiscoveryClient   ] : Saw local status change event StatusChangeEvent [timestamp=1681174335709, current=UP, previous=STARTING]
+2023-04-10 20:52:15.711-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 4182 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:5005: registering service...
+2023-04-10 20:52:15.723-0400 [main]  INFO 4182 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 5005 (http) with context path ''
+2023-04-10 20:52:15.724-0400 [main]  INFO 4182 --- [.s.c.n.e.s.EurekaAutoServiceRegistration] : Updating port to 5005
+2023-04-10 20:52:15.745-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 4182 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:5005 - registration status: 204
+2023-04-10 20:52:15.756-0400 [main]  INFO 4182 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Started KotlinApiApplicationKt in 8.94 seconds (JVM running for 10.059)
+2023-04-10 20:52:15.807-0400 [RMI TCP Connection(1)-127.0.0.1]  INFO 4182 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-10 20:52:15.807-0400 [RMI TCP Connection(1)-127.0.0.1]  INFO 4182 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-04-10 20:52:15.811-0400 [RMI TCP Connection(1)-127.0.0.1]  INFO 4182 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 3 ms
+2023-04-10 20:54:35.485-0400 [SpringApplicationShutdownHook]  INFO 4182 --- [o.s.c.n.e.s.EurekaServiceRegistry       ] : Unregistering application CURRENCY-CONVERTER with eureka with status DOWN
+2023-04-10 20:54:35.485-0400 [SpringApplicationShutdownHook]  INFO 4182 --- [com.netflix.discovery.DiscoveryClient   ] : Saw local status change event StatusChangeEvent [timestamp=1681174475485, current=DOWN, previous=UP]
+2023-04-10 20:54:35.485-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 4182 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:5005: registering service...
+2023-04-10 20:54:35.491-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 4182 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:5005 - registration status: 204
+2023-04-10 20:54:35.511-0400 [SpringApplicationShutdownHook]  INFO 4182 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 20:54:35.513-0400 [SpringApplicationShutdownHook]  INFO 4182 --- [com.netflix.discovery.DiscoveryClient   ] : Shutting down DiscoveryClient ...
+2023-04-10 20:54:38.515-0400 [SpringApplicationShutdownHook]  INFO 4182 --- [com.netflix.discovery.DiscoveryClient   ] : Unregistering ...
+2023-04-10 20:54:38.528-0400 [SpringApplicationShutdownHook]  INFO 4182 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:5005 - deregister  status: 200
+2023-04-10 20:54:38.541-0400 [SpringApplicationShutdownHook]  INFO 4182 --- [com.netflix.discovery.DiscoveryClient   ] : Completed shut down of DiscoveryClient
+2023-04-10 20:55:21.022-0400 [main]  INFO 4381 --- [c.c.c.ConfigServicePropertySourceLocator] : Fetching config from server at : http://localhost:8888
+2023-04-10 20:55:23.164-0400 [main]  INFO 4381 --- [c.c.c.ConfigServicePropertySourceLocator] : Located environment: name=currency-converter, profiles=[test], label=null, version=e379a45d823ade10f15f09a7325fe20a38416298, state=null
+2023-04-10 20:55:23.165-0400 [main]  INFO 4381 --- [b.c.PropertySourceBootstrapConfiguration] : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:JuancaJcA/server-config.git/currency-converter-test.yml'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:JuancaJcA/server-config.git/currency-converter.yml'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:JuancaJcA/server-config.git/application.yml'}]
+2023-04-10 20:55:23.172-0400 [main]  INFO 4381 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : The following 1 profile is active: "test"
+2023-04-10 20:55:23.993-0400 [main]  INFO 4381 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-10 20:55:24.130-0400 [main]  INFO 4381 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 127 ms. Found 1 JPA repository interfaces.
+2023-04-10 20:55:24.469-0400 [main]  INFO 4381 --- [o.s.cloud.context.scope.GenericScope    ] : BeanFactory id=d591c36a-946f-32d1-871b-03793a6e8a69
+2023-04-10 20:55:25.208-0400 [main]  INFO 4381 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 5005 (http)
+2023-04-10 20:55:25.216-0400 [main]  INFO 4381 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-04-10 20:55:25.216-0400 [main]  INFO 4381 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-10 20:55:25.304-0400 [main]  INFO 4381 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-04-10 20:55:25.304-0400 [main]  INFO 4381 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2114 ms
+2023-04-10 20:55:25.643-0400 [main] ERROR 4381 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/exchange/*] the HTTP methods [OPTIONS] are uncovered.
+2023-04-10 20:55:25.644-0400 [main] ERROR 4381 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
+2023-04-10 20:55:25.754-0400 [main]  INFO 4381 --- [o.hibernate.jpa.internal.util.LogHelper ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-10 20:55:25.810-0400 [main]  INFO 4381 --- [org.hibernate.Version                   ] : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-10 20:55:25.942-0400 [main]  INFO 4381 --- [o.hibernate.annotations.common.Version  ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-10 20:55:26.139-0400 [main]  INFO 4381 --- [org.hibernate.dialect.Dialect           ] : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-10 20:55:26.500-0400 [main]  INFO 4381 --- [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-10 20:55:26.507-0400 [main]  INFO 4381 --- [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 20:55:27.144-0400 [main]  WARN 4381 --- [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-10 20:55:28.552-0400 [main]  INFO 4381 --- [DiscoveryClientOptionalArgsConfiguration] : Eureka HTTP Client uses RestTemplate.
+2023-04-10 20:55:28.821-0400 [main]  WARN 4381 --- [iguration$LoadBalancerCaffeineWarnLogger] : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-10 20:55:28.831-0400 [main]  INFO 4381 --- [o.s.b.a.e.web.EndpointLinksResolver     ] : Exposing 16 endpoint(s) beneath base path '/actuator'
+2023-04-10 20:55:28.913-0400 [main]  INFO 4381 --- [o.s.c.n.eureka.InstanceInfoFactory      ] : Setting initial instance status as: STARTING
+2023-04-10 20:55:28.964-0400 [main]  INFO 4381 --- [com.netflix.discovery.DiscoveryClient   ] : Initializing Eureka in region us-east-1
+2023-04-10 20:55:28.969-0400 [main]  INFO 4381 --- [c.n.d.s.r.aws.ConfigClusterResolver     ] : Resolving eureka endpoints via configuration
+2023-04-10 20:55:28.999-0400 [main]  INFO 4381 --- [com.netflix.discovery.DiscoveryClient   ] : Disable delta property : false
+2023-04-10 20:55:28.999-0400 [main]  INFO 4381 --- [com.netflix.discovery.DiscoveryClient   ] : Single vip registry refresh property : null
+2023-04-10 20:55:28.999-0400 [main]  INFO 4381 --- [com.netflix.discovery.DiscoveryClient   ] : Force full registry fetch : false
+2023-04-10 20:55:28.999-0400 [main]  INFO 4381 --- [com.netflix.discovery.DiscoveryClient   ] : Application is null : false
+2023-04-10 20:55:29.000-0400 [main]  INFO 4381 --- [com.netflix.discovery.DiscoveryClient   ] : Registered Applications size is zero : true
+2023-04-10 20:55:29.000-0400 [main]  INFO 4381 --- [com.netflix.discovery.DiscoveryClient   ] : Application version is -1: true
+2023-04-10 20:55:29.000-0400 [main]  INFO 4381 --- [com.netflix.discovery.DiscoveryClient   ] : Getting all instance registry info from the eureka server
+2023-04-10 20:55:29.421-0400 [main]  INFO 4381 --- [com.netflix.discovery.DiscoveryClient   ] : The response status is 200
+2023-04-10 20:55:29.424-0400 [main]  INFO 4381 --- [com.netflix.discovery.DiscoveryClient   ] : Starting heartbeat executor: renew interval is: 30
+2023-04-10 20:55:29.426-0400 [main]  INFO 4381 --- [c.n.discovery.InstanceInfoReplicator    ] : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-04-10 20:55:29.431-0400 [main]  INFO 4381 --- [com.netflix.discovery.DiscoveryClient   ] : Discovery Client initialized at timestamp 1681174529431 with initial instances count: 1
+2023-04-10 20:55:29.435-0400 [main]  INFO 4381 --- [o.s.c.n.e.s.EurekaServiceRegistry       ] : Registering application CURRENCY-CONVERTER with eureka with status UP
+2023-04-10 20:55:29.436-0400 [main]  INFO 4381 --- [com.netflix.discovery.DiscoveryClient   ] : Saw local status change event StatusChangeEvent [timestamp=1681174529436, current=UP, previous=STARTING]
+2023-04-10 20:55:29.438-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 4381 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:5005: registering service...
+2023-04-10 20:55:29.460-0400 [main]  INFO 4381 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat started on port(s): 5005 (http) with context path ''
+2023-04-10 20:55:29.462-0400 [main]  INFO 4381 --- [.s.c.n.e.s.EurekaAutoServiceRegistration] : Updating port to 5005
+2023-04-10 20:55:29.476-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 4381 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:5005 - registration status: 204
+2023-04-10 20:55:29.485-0400 [main]  INFO 4381 --- [A.a.kotlinAPI.KotlinApiApplicationKt    ] : Started KotlinApiApplicationKt in 10.126 seconds (JVM running for 11.676)
+2023-04-10 20:55:29.868-0400 [RMI TCP Connection(3)-127.0.0.1]  INFO 4381 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-10 20:55:29.869-0400 [RMI TCP Connection(3)-127.0.0.1]  INFO 4381 --- [o.s.web.servlet.DispatcherServlet       ] : Initializing Servlet 'dispatcherServlet'
+2023-04-10 20:55:29.874-0400 [RMI TCP Connection(3)-127.0.0.1]  INFO 4381 --- [o.s.web.servlet.DispatcherServlet       ] : Completed initialization in 4 ms
+2023-04-10 20:58:58.296-0400 [SpringApplicationShutdownHook]  INFO 4381 --- [o.s.c.n.e.s.EurekaServiceRegistry       ] : Unregistering application CURRENCY-CONVERTER with eureka with status DOWN
+2023-04-10 20:58:58.296-0400 [SpringApplicationShutdownHook]  INFO 4381 --- [com.netflix.discovery.DiscoveryClient   ] : Saw local status change event StatusChangeEvent [timestamp=1681174738296, current=DOWN, previous=UP]
+2023-04-10 20:58:58.296-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 4381 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:5005: registering service...
+2023-04-10 20:58:58.304-0400 [DiscoveryClient-InstanceInfoReplicator-0]  INFO 4381 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:5005 - registration status: 204
+2023-04-10 20:58:58.341-0400 [SpringApplicationShutdownHook]  INFO 4381 --- [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 20:58:58.347-0400 [SpringApplicationShutdownHook]  INFO 4381 --- [com.netflix.discovery.DiscoveryClient   ] : Shutting down DiscoveryClient ...
+2023-04-10 20:59:01.348-0400 [DiscoveryClient-0]  WARN 4381 --- [c.netflix.discovery.TimedSupervisorTask ] : task supervisor shutting down, can't accept the task
+2023-04-10 20:59:01.349-0400 [SpringApplicationShutdownHook]  INFO 4381 --- [com.netflix.discovery.DiscoveryClient   ] : Unregistering ...
+2023-04-10 20:59:01.359-0400 [SpringApplicationShutdownHook]  INFO 4381 --- [com.netflix.discovery.DiscoveryClient   ] : DiscoveryClient_CURRENCY-CONVERTER/172.18.0.150:currency-converter:5005 - deregister  status: 200
+2023-04-10 20:59:01.363-0400 [SpringApplicationShutdownHook]  INFO 4381 --- [com.netflix.discovery.DiscoveryClient   ] : Completed shut down of DiscoveryClient

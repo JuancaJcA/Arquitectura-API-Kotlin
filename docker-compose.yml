@@ -2,10 +2,11 @@
 #sudo docker run -d --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -v /home/juancajca/Documents/postgres-arqui:/var/lib/postresql/data -p 5432:5432 -d postgres
 version: "2.4"
 
+
 services:
   postgres:
     image: postgres:15
-    mem_limit: 1024m
+    mem_limit: 512m
     ports:
       - "5432:5432"
     environment:
@@ -23,10 +24,14 @@ services:
     restart: always
     environment:
       URL: "${POSTGRES_URL}"
+    volumes:
+      - /home/juanca/Documents/UCB/Arquitectura/Arquitectura-API-Kotlin:/logs/archived/
     depends_on:
       - postgres
     networks:
       - my-network
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
   angular:
 #    image: angular-software:3.0.0
@@ -36,6 +41,12 @@ services:
       - "4200:80"
     networks:
       - my-network
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - currency-converter
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
 networks:
   my-network:

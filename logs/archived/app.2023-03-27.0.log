@@ -1,0 +1,2 @@
+2023-03-27 16:38:54,822 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] For security constraints with URL pattern [/api/v1/exchange/*] the HTTP methods [OPTIONS] are uncovered.
+2023-03-27 16:38:54,827 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] For security constraints with URL pattern [/api/v1/pagination] the HTTP methods [OPTIONS] are uncovered.
